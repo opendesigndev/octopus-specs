@@ -1,0 +1,21 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build
+
+before_script:
+  - apk add --no-cache yarn
+  - yarn
+
+
+octopus-openapi-json:
+  stage: build
+  script:
+    - scripts/assemble.sh
+
+  artifacts:
+    paths:
+      - dist/openapi.json
