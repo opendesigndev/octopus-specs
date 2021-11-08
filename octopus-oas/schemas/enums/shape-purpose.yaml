@@ -1,0 +1,5 @@
+description: Shepe purpose enum.
+type: string
+enum:
+  - FILL
+  - STROKE

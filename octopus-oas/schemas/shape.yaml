@@ -1,0 +1,26 @@
+description:
+  A single shape object description.
+
+type: object
+
+properties:
+  purpose:
+    $ref: '../schemas.yaml#/ShapePurpose'
+    description: |
+      Denotes a semantical meaning of the shape within a layer.
+      * `FILL` - the shape represents a fill
+      * `STROKE` - the shape represents a border (outline)
+
+  fillRule:
+    $ref: '../schemas.yaml#/FillRule'
+
+  shape:
+    $ref: '../schemas.yaml#/PathLike'
+    description:
+      Path like object representing the root of a boolean expression tree forming the shape.
+
+
+
+
+
+

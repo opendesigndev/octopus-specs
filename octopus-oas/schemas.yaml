@@ -1,0 +1,71 @@
+TODO:
+  $ref: ./schemas/todo.yaml
+
+OctopusDocument:
+  $ref: ./schemas/octopus-document.yaml
+
+Layer:
+  $ref: ./schemas/layer.yaml
+
+LayerBase:
+  $ref: ./schemas/layer-base.yaml
+
+ShapeLayer:
+  $ref: ./schemas/shape-layer.yaml
+
+TextLayer:
+  $ref: ./schemas/text-layer.yaml
+
+MaskGroupLayer:
+  $ref: ./schemas/mask-group-layer.yaml
+
+GroupLayer:
+  $ref: ./schemas/group-layer.yaml
+
+ID:
+  $ref: ./schemas/id.yaml
+
+Dimensions:
+  $ref: ./schemas/dimensions.yaml
+
+Vec2:
+  $ref: ./schemas/vec2.yaml
+
+Transform:
+  $ref: ./schemas/transform.yaml
+
+TransformMeta:
+  $ref: ./schemas/transform-meta.yaml
+
+Opacity:
+  $ref: ./schemas/opacity.yaml
+
+Shape:
+  $ref: ./schemas/shape.yaml
+
+ShapePurpose:
+  $ref: ./schemas/enums/shape-purpose.yaml
+
+FillRule:
+  $ref: ./schemas/enums/fill-rule.yaml
+
+PathLike:
+  $ref: ./schemas/path-like.yaml
+
+PathType:
+  $ref: ./schemas/enums/path-type.yaml
+
+CompoundPath:
+  $ref: ./schemas/path-compound.yaml
+
+Path:
+  $ref: ./schemas/path.yaml
+
+BooleanOp:
+  $ref: ./schemas/enums/boolean-op.yaml
+
+PathGeometry:
+  $ref: ./schemas/path-geometry.yaml
+
+Text:
+  $ref: '#/TODO'

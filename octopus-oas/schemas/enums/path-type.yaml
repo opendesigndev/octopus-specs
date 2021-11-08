@@ -1,0 +1,5 @@
+description: Path-like object type enum.
+type: string
+enum:
+  - PATH
+  - COMPOUND

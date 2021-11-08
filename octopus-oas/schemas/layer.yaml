@@ -1,0 +1,16 @@
+description:
+  A layer is a building block of a document. Can be of various types and can form hierarchies.
+
+oneOf:
+  - $ref: '../schemas.yaml#/ShapeLayer'
+  - $ref: '../schemas.yaml#/TextLayer'
+  - $ref: '../schemas.yaml#/MaskGroupLayer'
+  - $ref: '../schemas.yaml#/GroupLayer'
+
+discriminator:
+  propertyName: type
+  mapping:
+    SHAPE: '#/components/schemas/ShapeLayer'
+    TEXT: '#/components/schemas/TextLayer'
+    MASK_GROUP: '#/components/schemas/MaskGroupLayer'
+    GROUP: '#/components/schemas/GroupLayer'

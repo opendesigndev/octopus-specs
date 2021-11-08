@@ -1,0 +1,7 @@
+description: Boolean operation type enum.
+type: string
+enum:
+  - UNION
+  - INTERSECT
+  - SUBTRACT
+  - EXCLUDE

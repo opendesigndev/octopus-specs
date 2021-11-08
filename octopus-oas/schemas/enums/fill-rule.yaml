@@ -1,0 +1,8 @@
+description:
+  Enum representing shape's fill rule (a.k.a. winding rule).
+
+type: string
+
+enum:
+  - EVEN_ODD
+  - NON_ZERO

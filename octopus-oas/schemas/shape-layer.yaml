@@ -1,0 +1,17 @@
+description:
+  Shape layer represents a vector geometry which is formed by individual paths
+  combined together via boolean operations. At least on of `shape` or
+  `borderShape` fields is required to be present.
+
+allOf:
+  - $ref: '../schemas.yaml#/LayerBase'
+
+  - type: object
+    properties:
+      shapes:
+        description: TODO proper shapes
+        type: array
+        items:
+          $ref: '../schemas.yaml#/Shape'
+
+    required: [shapes]

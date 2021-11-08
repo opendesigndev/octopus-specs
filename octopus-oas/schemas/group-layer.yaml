@@ -1,0 +1,14 @@
+description:
+  Group layer is a composite layer containing other layers as components.
+
+allOf:
+  - $ref: '../schemas.yaml#/LayerBase'
+
+  - type: object
+    properties:
+      layers:
+        type: array
+        items:
+          $ref: '../schemas.yaml#/Layer'
+
+    required: [layers]

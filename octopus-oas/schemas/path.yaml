@@ -1,0 +1,27 @@
+description:
+  Elementary path object containing an actual path geometry.
+
+type: object
+
+properties:
+  type:
+    $ref: '../schemas.yaml#/PathType'
+
+  geometry:
+    $ref: '../schemas.yaml#/PathGeometry'
+    description:
+      If present, the `geometry` contains a resolved path after the `op` applicaton.
+
+  transform:
+    $ref: '../schemas.yaml#/Transform'
+    description:
+      Sub-path transformation relative to the parent path.
+
+  visible:
+    type: boolean
+    default: true
+    description:
+      Toggles whether the path is visible and therefore if contribues the
+      overal boolen expression result.
+
+required: [type, geometry]
