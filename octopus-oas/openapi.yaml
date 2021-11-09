@@ -15,4 +15,4 @@ paths:
                 $ref: '#/components/schemas/OctopusDocument'
 components:
   schemas:
-    $ref: './schemas.yaml'
+    $ref: 'schemas/schemas.yaml'

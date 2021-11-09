@@ -11,11 +11,11 @@ properties:
     enum: [ARTBOARD]
 
   dimensions:
-    $ref: '../schemas.yaml#/Dimensions'
+    $ref: './schemas.yaml#/Dimensions'
 
   layers:
     type: array
     items:
-      $ref: '../schemas.yaml#/Layer'
+      $ref: './schemas.yaml#/Layer'
 
 required: [id]

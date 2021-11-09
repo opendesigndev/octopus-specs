@@ -11,10 +11,10 @@ properties:
     default: 0.0
 
   origin:
-    $ref: '../schemas.yaml#/Vec2'
+    $ref: './schemas.yaml#/Vec2'
 
   scale:
-    $ref: '../schemas.yaml#/Vec2'
+    $ref: './schemas.yaml#/Vec2'
     default: [1.0, 1.0]
 
   horizontal-flip:

@@ -2,11 +2,11 @@ description:
   Text layer represents a piece of text with its formatting and positioning.
 
 allOf:
-  - $ref: '../schemas.yaml#/LayerBase'
+  - $ref: './schemas.yaml#/LayerBase'
 
   - type: object
     properties:
       text:
-        $ref: '../schemas.yaml#/TODO'
+        $ref: './schemas.yaml#/TODO'
 
     required: [text]

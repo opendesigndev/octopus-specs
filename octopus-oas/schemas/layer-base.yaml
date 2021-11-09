@@ -4,7 +4,7 @@ type: object
 properties:
   id:
     description: Unique layer identifier.
-    $ref: '../schemas.yaml#/ID'
+    $ref: './schemas.yaml#/ID'
 
   type:
     description: Layer type.
@@ -21,22 +21,22 @@ properties:
 
   transform:
     description: Layer transformation relative to its parent.
-    $ref: '../schemas.yaml#/Transform'
+    $ref: './schemas.yaml#/Transform'
 
   transformMeta:
     description: Layer transformation meta information - original values of the transform actions.
-    $ref: '../schemas.yaml#/TransformMeta'
+    $ref: './schemas.yaml#/TransformMeta'
 
   opacity:
     description:
       Opacity level of the layer, `1.0` - fully opaque, `0.0` - fully transparent.
 
     default: 1
-    $ref: '../schemas.yaml#/Opacity'
+    $ref: './schemas.yaml#/Opacity'
 
   blendMode:
     description: Blend mode of the layer.
     default: NORMAL
-    $ref: './blend-mode.yaml'
+    $ref: './schemas.yaml#/BlendMode'
 
 required: [id, type]

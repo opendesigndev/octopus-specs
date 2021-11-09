@@ -1,0 +1,7 @@
+description:
+  A real number in the closed interval [0,1].
+
+type: number
+format: float
+minimum: 0
+maximum: 1

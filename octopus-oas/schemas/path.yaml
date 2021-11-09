@@ -4,11 +4,11 @@ description:
 type: object
 
 allOf:
-  - $ref: '../schemas.yaml#/PathBase'
+  - $ref: './schemas.yaml#/PathBase'
 
   - type: object
     properties:
       geometry:
-        $ref: '../schemas.yaml#/PathGeometry'
+        $ref: './schemas.yaml#/PathGeometry'
 
     required: [geometry]

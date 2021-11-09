@@ -1,0 +1,99 @@
+TODO:
+  $ref: ./todo.yaml
+
+OctopusDocument:
+  $ref: ./octopus-document.yaml
+
+# Layers
+
+Layer:
+  $ref: ./layer.yaml
+
+LayerBase:
+  $ref: ./layer-base.yaml
+
+ShapeLayer:
+  $ref: ./shape-layer.yaml
+
+TextLayer:
+  $ref: ./text-layer.yaml
+
+MaskGroupLayer:
+  $ref: ./mask-group-layer.yaml
+
+GroupLayer:
+  $ref: ./group-layer.yaml
+
+# Common
+
+ID:
+  $ref: ./common/id.yaml
+
+Dimensions:
+  $ref: ./common/dimensions.yaml
+
+Vec2:
+  $ref: ./common/vec2.yaml
+
+UnitRange:
+  $ref: ./common/unit-range.yaml
+
+Transform:
+  $ref: ./transform.yaml
+
+TransformMeta:
+  $ref: ./transform-meta.yaml
+
+Opacity:
+  $ref: ./opacity.yaml
+
+BlendMode:
+  $ref: ./enums/blend-mode.yaml
+
+Color:
+  $ref: ./common/color.yaml
+
+# Shapes
+
+Shape:
+  $ref: ./shape.yaml
+
+ShapePurpose:
+  $ref: ./enums/shape-purpose.yaml
+
+FillRule:
+  $ref: ./enums/fill-rule.yaml
+
+PathLike:
+  $ref: ./path-like.yaml
+
+PathType:
+  $ref: ./enums/path-type.yaml
+
+PathBase:
+  $ref: ./path-base.yaml
+
+CompoundPath:
+  $ref: ./path-compound.yaml
+
+Path:
+  $ref: ./path.yaml
+
+BooleanOp:
+  $ref: ./enums/boolean-op.yaml
+
+PathGeometry:
+  $ref: ./path-geometry.yaml
+
+# Effects
+
+EffectType:
+  $ref: ./effects/effect-type.yaml
+
+EffectBase:
+  $ref: ./effects/effect-base.yaml
+
+# Texts
+
+Text:
+  $ref: '#/TODO'
