@@ -1,5 +1,5 @@
 description:
-  Dimensions represent the size (width, height) of an entinty.
+  Dimensions represent the size (width, height) of an entity.
 
 type: object
 

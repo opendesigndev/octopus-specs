@@ -55,6 +55,9 @@ PathLike:
 PathType:
   $ref: ./schemas/enums/path-type.yaml
 
+PathBase:
+  $ref: ./schemas/path-base.yaml
+
 CompoundPath:
   $ref: ./schemas/path-compound.yaml
 

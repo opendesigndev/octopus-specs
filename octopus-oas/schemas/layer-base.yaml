@@ -4,11 +4,11 @@ type: object
 properties:
   id:
     description: Unique layer identifier.
-    $ref: './enums/layer-type.yaml'
+    $ref: '../schemas.yaml#/ID'
 
   type:
     description: Layer type.
-    $ref: '../schemas.yaml#/ID'
+    $ref: './enums/layer-type.yaml'
 
   name:
     description: Name of the layer.

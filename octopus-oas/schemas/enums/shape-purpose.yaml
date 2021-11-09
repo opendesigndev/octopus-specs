@@ -1,4 +1,4 @@
-description: Shepe purpose enum.
+description: Shape purpose enum.
 type: string
 enum:
   - FILL

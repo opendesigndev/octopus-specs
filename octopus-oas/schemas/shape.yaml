@@ -14,13 +14,12 @@ properties:
   fillRule:
     $ref: '../schemas.yaml#/FillRule'
 
-  shape:
+  path:
     $ref: '../schemas.yaml#/PathLike'
     description:
       Path like object representing the root of a boolean expression tree forming the shape.
 
-
-
-
-
-
+required:
+  - purpose
+  - fillRule
+  - shape

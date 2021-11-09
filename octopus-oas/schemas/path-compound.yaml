@@ -3,34 +3,25 @@ description:
 
 type: object
 
-properties:
-  type:
-    $ref: '../schemas.yaml#/PathType'
+allOf:
+  - $ref: '../schemas.yaml#/PathBase'
 
-  op:
-    $ref: '../schemas.yaml#/BooleanOp'
+  - type: object
+    properties:
+      op:
+        $ref: '../schemas.yaml#/BooleanOp'
 
-  paths:
-    type: array
-    items:
-      $ref: '../schemas.yaml#/Path'
-    minItems: 1
+      paths:
+        type: array
+        items:
+          $ref: '../schemas.yaml#/PathLike'
+        minItems: 1
 
-  geometry:
-    $ref: '../schemas.yaml#/PathGeometry'
-    description:
-      If present, the `geometry` contains a resolved path after the `op` applicaton.
+      geometry:
+        $ref: '../schemas.yaml#/PathGeometry'
+        description:
+          If present, the `geometry` contains a resolved path after the `op` application.
 
-  transform:
-    $ref: '../schemas.yaml#/Transform'
-    description:
-      Sub-path transformation relative to the parent path.
-
-  visible:
-    type: boolean
-    default: true
-    description:
-      Toggles whether the path is visible and therefore if contribues the
-      overal boolen expression result.
-
-required: [type, op, paths]
+    required:
+      - op
+      - paths
