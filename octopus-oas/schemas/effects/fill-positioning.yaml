@@ -1,0 +1,28 @@
+description:
+  Gradient or pattern fill positioning description.
+
+type: object
+
+properties:
+  layout:
+    type: string
+    enum:
+      - FILL
+      - FIT
+      - TILE
+      - STRETCH
+
+  origin:
+    type: string
+    enum:
+      - LAYER
+      - PARENT
+      - ARTBOARD
+      - COMPONENT
+
+  transform:
+    $ref: '../schemas.yaml#/Transform'
+
+required:
+  - layout
+  - origin

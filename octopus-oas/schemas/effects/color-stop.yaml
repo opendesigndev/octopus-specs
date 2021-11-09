@@ -1,0 +1,28 @@
+description:
+  Gradient color record.
+
+type: object
+
+properties:
+  position:
+    $ref: '../schemas.yaml#/UnitRange'
+
+  interpolation:
+    type: string
+    enum:
+      - LINEAR
+      - POWER
+      - REVERSE_POWER
+
+  interpolationParameter:
+    type: number
+    format: float
+    default: 0
+
+  color:
+    $ref: '../schemas.yaml#/Color'
+
+required:
+  - position
+  - interpolation
+  - color

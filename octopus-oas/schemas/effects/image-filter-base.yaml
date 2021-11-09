@@ -1,0 +1,16 @@
+description:
+  Common data fields of all the image filters.
+
+type: object
+
+properties:
+  type:
+    $ref: '../schemas.yaml#/ImageFilterType'
+
+  visible:
+    type: boolean
+    default: true
+    description:
+      Toggles whether is the filter applied.
+
+required: [type]

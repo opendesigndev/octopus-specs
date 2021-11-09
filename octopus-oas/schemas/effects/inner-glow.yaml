@@ -1,0 +1,14 @@
+description:
+  Inner glow effect description.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    properties:
+      glow:
+        $ref: '../schemas.yaml#/ShadowConfig'
+
+    required: [glow]

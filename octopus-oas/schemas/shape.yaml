@@ -19,6 +19,16 @@ properties:
     description:
       Path like object representing the root of a boolean expression tree forming the shape.
 
+  fills:
+    type: array
+    items:
+      $ref: './schemas.yaml#/FillEffect'
+
+  strokes:
+    type: array
+    items:
+      $ref: './schemas.yaml#/EffectStroke'
+
 required:
   - purpose
   - fillRule

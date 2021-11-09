@@ -1,0 +1,23 @@
+description:
+  Image fill effect.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    properties:
+
+      image:
+        $ref: '../schemas.yaml#/Image'
+
+      positioning:
+        $ref: '../schemas.yaml#/FillPositioning'
+
+      filters:
+        type: array
+        items:
+          $ref: '../schemas.yaml#/ImageFilter'
+
+    required: [image, positioning]

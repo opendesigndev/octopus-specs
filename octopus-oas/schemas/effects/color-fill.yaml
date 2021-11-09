@@ -11,11 +11,4 @@ allOf:
       color:
         $ref: '../schemas.yaml#/Color'
 
-      geometry:
-        $ref: '../schemas.yaml#/PathGeometry'
-        description:
-          If present, the `geometry` contains a resolved path after the `op` application.
-
-    required:
-      - op
-      - paths
+    required: [color]

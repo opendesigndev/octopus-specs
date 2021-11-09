@@ -8,10 +8,12 @@ properties:
     type: number
     format: float
     minimum: 0
+    exclusiveMinimum: true
 
   height:
     type: number
     format: float
     minimum: 0
+    exclusiveMinimum: true
 
 required: [width, height]

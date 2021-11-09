@@ -1,0 +1,7 @@
+description: Gradient fill type enum.
+type: string
+enum:
+  - LINEAR
+  - RADIAL
+  - ANGULAR
+  - DIAMOND

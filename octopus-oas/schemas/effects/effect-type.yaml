@@ -1,4 +1,6 @@
-description: Effect type enum.
+description:
+  Effect type enum.
+
 type: string
 enum:
   - COLOR_FILL
