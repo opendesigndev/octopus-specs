@@ -1,0 +1,13 @@
+description:
+  Array representing a two dimensional vector.
+
+type:
+  array
+
+items:
+  type: number
+  format: float
+  minItems: 2
+  maxItems: 2
+
+default: [0.0, 0.0]

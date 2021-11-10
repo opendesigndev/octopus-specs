@@ -1,0 +1,27 @@
+description:
+  A path compound of multiple sub-paths using a boolean operation.
+
+type: object
+
+allOf:
+  - $ref: './schemas.yaml#/PathBase'
+
+  - type: object
+    properties:
+      op:
+        $ref: './schemas.yaml#/BooleanOp'
+
+      paths:
+        type: array
+        items:
+          $ref: './schemas.yaml#/PathLike'
+        minItems: 1
+
+      geometry:
+        $ref: './schemas.yaml#/PathGeometry'
+        description:
+          If present, the `geometry` contains a resolved path after the `op` application.
+
+    required:
+      - op
+      - paths

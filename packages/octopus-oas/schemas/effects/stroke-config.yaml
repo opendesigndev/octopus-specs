@@ -1,0 +1,31 @@
+description:
+  Common stroke properties.
+
+type: object
+
+properties:
+  thickness:
+    type: number
+    format: float
+    minimum: 0
+    description:
+      Width of the border in pixels.
+
+  position:
+    type: string
+    enum:
+      - CENTER
+      - INSIDE
+      - OUTSIDE
+    description:
+      Stroke alignment relative to the shape outline.
+
+  fill:
+    $ref: '../schemas.yaml#/FillEffect'
+    description:
+      Stroke's fill description.
+
+required:
+  - thickness
+  - position
+  - fill

@@ -1,0 +1,5 @@
+description: Shape purpose enum.
+type: string
+enum:
+  - FILL
+  - STROKE

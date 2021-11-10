@@ -1,0 +1,67 @@
+description:
+  Vector stroke properties.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/StrokeConfig'
+
+  - type: object
+    properties:
+      style:
+        type: string
+        enum:
+          - SOLID
+          - DOTTED
+          - DASHED
+        description:
+          type of the stroke style, the `dashed` style is further specified in
+          `dashing` and `dashOffset`.
+
+      lineJoin:
+        type: string
+        enum:
+          - BEVEL
+          - ROUND
+          - MITER
+        description:
+          Style of a connection between adjacent segments.
+
+      lineCap:
+        type: string
+        enum:
+          - ROUND
+          - BUTT
+          - SQUARE
+        description:
+          Style of the stroke segments ending.
+
+      miterLimit:
+        type: number
+        format: float
+        default: 20
+        description:
+          A value limiting the extension of a sharp tip created by adjacent
+          segments when using `MITER` join.
+
+
+      dashing:
+        type: array
+        items:
+          type: number
+          format: float
+        description:
+          A set of alternating dashes (filled regions) and gaps (empty regions).
+          [Applies to `DASHED` strokes only].
+
+      dashOffset:
+        type: number
+        format: float
+        description:
+          Offset of the initial dash.
+          [Applies to `DASHED` strokes only].
+
+    required:
+      - style
+      - lineJoin
+      - lineCap

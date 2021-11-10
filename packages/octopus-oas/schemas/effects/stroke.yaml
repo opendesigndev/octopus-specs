@@ -1,0 +1,14 @@
+description:
+  (Vector) stroke effect description.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    properties:
+      stroke:
+        $ref: '../schemas.yaml#/VectorStrokeConfig'
+
+    required: [stroke]

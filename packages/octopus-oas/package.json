@@ -1,0 +1,13 @@
+{
+  "name": "@avocode/octopus-oas",
+  "version": "3.0.0-alpha.1",
+  "files": [
+    "dist/openapi.json"
+  ],
+  "scripts": {
+    "build": "./scripts/assemble.sh"
+  },
+  "devDependencies": {
+    "@apidevtools/swagger-cli": "4.0.4"
+  }
+}

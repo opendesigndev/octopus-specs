@@ -1,0 +1,21 @@
+description: Octopus Document description
+properties:
+  version:
+    type: string
+
+  id:
+    type: string
+
+  type:
+    type: string
+    enum: [ARTBOARD]
+
+  dimensions:
+    $ref: './schemas.yaml#/Dimensions'
+
+  layers:
+    type: array
+    items:
+      $ref: './schemas.yaml#/Layer'
+
+required: [id]

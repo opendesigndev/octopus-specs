@@ -1,0 +1,12 @@
+description:
+  A path-like object, can be of type 'PATH' (contains an actual sub-path geometry) or 'COMPOUND' (connecting multiple sub-paths using a boolean operation).
+
+oneOf:
+  - $ref: './schemas.yaml#/CompoundPath'
+  - $ref: './schemas.yaml#/Path'
+
+discriminator:
+  propertyName: type
+  mapping:
+    COMPOUND: '#/components/schemas/CompoundPath'
+    PATH: '#/components/schemas/Path'

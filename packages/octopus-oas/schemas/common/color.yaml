@@ -1,0 +1,23 @@
+description:
+  Color object.
+
+type: object
+
+properties:
+  r:
+    description: Red channel value.
+    $ref: '../schemas.yaml#/UnitRange'
+
+  g:
+    description: Green channel value.
+    $ref: '../schemas.yaml#/UnitRange'
+
+  b:
+    description: Blue channel value.
+    $ref: '../schemas.yaml#/UnitRange'
+
+  a:
+    description: Alpha channel value.
+    $ref: '../schemas.yaml#/UnitRange'
+
+required: [r, g, b, a]

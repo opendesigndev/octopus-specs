@@ -1,0 +1,11 @@
+{
+  "name": "@opendesign/manifest-ts",
+  "version": "3.0.0-alpha.1",
+  "files": [
+    "dist/openapi.json"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "@apidevtools/swagger-cli": "4.0.4"
+  }
+}

@@ -1,0 +1,14 @@
+description:
+  Abstract image filter definition.
+
+oneOf:
+  - $ref: '../schemas.yaml#/ImageFilterOpacityMultiplier'
+  - $ref: '../schemas.yaml#/ImageFilterSketchAdjust'
+  - $ref: '../schemas.yaml#/ImageFilterFigmaAdjust'
+
+discriminator:
+  propertyName: type
+  mapping:
+    OPACITY_MULTIPLIER: '#/components/schemas/ImageFilterOpacityMultiplier'
+    SKETCH_COLOR_ADJUSTMENT: '#/components/schemas/ImageFilterSketchAdjust'
+    FIGMA_COLOR_ADJUSTMENT: '#/components/schemas/ImageFilterFigmaAdjust'

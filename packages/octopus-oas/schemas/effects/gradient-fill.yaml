@@ -1,0 +1,26 @@
+description:
+  Gradient fill effect.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    properties:
+
+      gradient:
+        type: object
+        properties:
+          - type:
+              $ref: './gradient-type.yaml'
+
+          - colors:
+            type: array
+            items:
+              $ref: './color-stop.yaml'
+
+      positioning:
+        $ref: '../schemas.yaml#/FillPositioning'
+
+    required: [gradient, positioning]

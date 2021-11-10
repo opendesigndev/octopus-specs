@@ -1,0 +1,66 @@
+description:
+  Common layer properties.
+
+type: object
+
+properties:
+  id:
+    description:
+      Unique layer identifier.
+
+    $ref: './schemas.yaml#/ID'
+
+  type:
+    description:
+      Layer type.
+
+    $ref: './enums/layer-type.yaml'
+
+  name:
+    description:
+      Name of the layer.
+
+    type: string
+
+  visible:
+    description:
+      Describes the layer visibility.
+
+    type: boolean
+    default: true
+
+  transform:
+    description:
+      Layer transformation relative to its parent.
+
+    $ref: './schemas.yaml#/Transform'
+
+  transformMeta:
+    description:
+      Layer transformation meta information - original values of the transform actions.
+
+    $ref: './schemas.yaml#/TransformMeta'
+
+  opacity:
+    description:
+      Opacity level of the layer, `1.0` - fully opaque, `0.0` - fully transparent.
+
+    default: 1
+    $ref: './schemas.yaml#/Opacity'
+
+  blendMode:
+    description:
+      Blend mode of the layer.
+
+    default: NORMAL
+    $ref: './schemas.yaml#/BlendMode'
+
+  effects:
+    description:
+      List of effects applied to the layer.
+
+    type: array
+    items:
+      $ref: './schemas.yaml#/Effect'
+
+required: [id, type]

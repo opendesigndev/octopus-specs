@@ -1,0 +1,16 @@
+description:
+  Effect type enum.
+
+type: string
+enum:
+  - COLOR_FILL
+  - GRADIENT_FILL
+  - IMAGE_FILL
+  - STROKE
+  - RASTER_STROKE
+  - DROP_SHADOW
+  - INNER_SHADOW
+  - OUTER_GLOW
+  - INNER_GLOW
+  - BLUR
+  - OTHER

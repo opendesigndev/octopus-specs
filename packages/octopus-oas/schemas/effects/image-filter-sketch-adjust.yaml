@@ -1,0 +1,29 @@
+description:
+  Sketch image filter configuration.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/ImageFilterBase'
+
+  - type: object
+    properties:
+      colorAdjustment:
+        type: object
+
+        properties:
+          hue:
+            type: number
+            format: float
+
+          saturation:
+            type: number
+            format: float
+
+          brightness:
+            type: number
+            format: float
+
+          contrast:
+            type: number
+            format: float

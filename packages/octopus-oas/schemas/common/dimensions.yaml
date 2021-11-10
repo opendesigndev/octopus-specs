@@ -1,0 +1,19 @@
+description:
+  Dimensions represent the size (width, height) of an entity.
+
+type: object
+
+properties:
+  width:
+    type: number
+    format: float
+    minimum: 0
+    exclusiveMinimum: true
+
+  height:
+    type: number
+    format: float
+    minimum: 0
+    exclusiveMinimum: true
+
+required: [width, height]

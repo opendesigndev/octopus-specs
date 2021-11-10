@@ -1,0 +1,12 @@
+description:
+  Opacity adjusting image filter.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/ImageFilterBase'
+
+  - type: object
+    properties:
+      opacity:
+        $ref: '../schemas.yaml#/Opacity'

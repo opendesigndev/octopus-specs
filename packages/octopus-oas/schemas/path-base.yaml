@@ -1,0 +1,22 @@
+description:
+  Common data fields of all "path-like" object.
+
+type: object
+
+properties:
+  type:
+    $ref: './schemas.yaml#/PathType'
+
+  transform:
+    $ref: './schemas.yaml#/Transform'
+    description:
+      Sub-path transformation relative to the parent path.
+
+  visible:
+    type: boolean
+    default: true
+    description:
+      Toggles whether the path is visible and therefore if contributes the
+      overall boolean expression result.
+
+required: [type]

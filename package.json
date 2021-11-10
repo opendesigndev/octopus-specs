@@ -1,11 +1,18 @@
 {
-  "name": "@avocode/octopus-specs",
-  "version": "3.0.0-alpha.1",
-  "files": [
-    "dist/openapi.json"
+  "name": "@opendesign/octopus-specs",
+  "private": true,
+  "workspaces": [
+    "packages/octopus-oas",
+    "packages/octopus-ts",
+    "packages/manifest-oas",
+    "packages/manifest-ts"
   ],
-  "scripts": {},
-  "devDependencies": {
-    "@apidevtools/swagger-cli": "4.0.4"
+  "files": [],
+  "scripts": {
+    "-- BUILD --": "",
+    "build-octopus-oas-json": "yarn workspace @opendesign/octopus-oas run build",
+    "build-octopus-ts": "yarn workspace @opendesign/octopus-ts run generate",
+    "build": "yarn run build-octopus-oas-json && yarn run build-octopus-ts",
+    "-- PUBLISH --": ""
   }
 }
