@@ -10,7 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@opendesign/octopus-oas": "3.0.0-alpha.1",
+    "@avocode/octopus-oas": "^3.0.0-alpha.1",
     "openapi-typescript": "^4.4.0",
     "prettier": "^2.4.1"
   }
