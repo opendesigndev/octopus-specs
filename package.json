@@ -14,5 +14,6 @@
     "build-octopus-ts": "yarn workspace @opendesign/octopus-ts run generate",
     "build": "yarn run build-octopus-oas-json && yarn run build-octopus-ts",
     "-- PUBLISH --": ""
-  }
+  },
+  "version": "0.0.1"
 }

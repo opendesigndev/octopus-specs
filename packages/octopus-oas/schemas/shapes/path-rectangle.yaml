@@ -1,0 +1,29 @@
+description:
+  A rectangle represented as a path-like object.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/PathBase'
+
+  - type: object
+    properties:
+      position:
+        $ref: '../schemas.yaml#/Vec2'
+
+      dimensions:
+        $ref: '../schemas.yaml#/Dimensions'
+
+      cornerRadii:
+        description:
+          Optional array of rectangle's corner radii.
+          Corners are in order top-left, top-right, bottom-right, bottom-left.
+
+        type: array
+        items:
+          type: number
+          format: float
+        minItems: 4
+        maxItems: 4
+
+    required: [position, dimensions]

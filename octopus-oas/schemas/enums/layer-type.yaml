@@ -1,7 +1,0 @@
-description: Layer type enum.
-type: string
-enum:
-  - SHAPE
-  - TEXT
-  - GROUP
-  - MASK_GROUP

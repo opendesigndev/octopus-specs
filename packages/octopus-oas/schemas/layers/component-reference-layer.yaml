@@ -1,0 +1,16 @@
+description:
+  A layer representing an instantiated component.
+
+allOf:
+  - $ref: '../schemas.yaml#/LayerBase'
+
+  - type: object
+    properties:
+      componentID:
+        description:
+          Referenced component ID.
+
+        $ref: '../schemas.yaml#/ID'
+
+
+    required: [componentID]

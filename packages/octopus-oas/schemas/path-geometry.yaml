@@ -1,4 +1,0 @@
-description:
-  Path geometry data formatted as an SVG path string (https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d).
-
-type: string

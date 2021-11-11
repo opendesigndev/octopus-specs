@@ -7,22 +7,25 @@ OctopusDocument:
 # Layers
 
 Layer:
-  $ref: ./layer.yaml
+  $ref: ./layers/layer.yaml
 
 LayerBase:
-  $ref: ./layer-base.yaml
+  $ref: ./layers/layer-base.yaml
 
 ShapeLayer:
-  $ref: ./shape-layer.yaml
+  $ref: ./layers/shape-layer.yaml
 
 TextLayer:
-  $ref: ./text-layer.yaml
+  $ref: ./layers/text-layer.yaml
+
+ComponentReferenceLayer:
+  $ref: ./layers/component-reference-layer.yaml
 
 MaskGroupLayer:
-  $ref: ./mask-group-layer.yaml
+  $ref: ./layers/mask-group-layer.yaml
 
 GroupLayer:
-  $ref: ./group-layer.yaml
+  $ref: ./layers/group-layer.yaml
 
 # Common
 
@@ -62,7 +65,7 @@ Image:
 # Shapes
 
 Shape:
-  $ref: ./shape.yaml
+  $ref: ./shapes/shape.yaml
 
 ShapePurpose:
   $ref: ./enums/shape-purpose.yaml
@@ -71,25 +74,28 @@ FillRule:
   $ref: ./enums/fill-rule.yaml
 
 PathLike:
-  $ref: ./path-like.yaml
+  $ref: ./shapes/path-like.yaml
 
 PathType:
   $ref: ./enums/path-type.yaml
 
 PathBase:
-  $ref: ./path-base.yaml
+  $ref: ./shapes/path-base.yaml
 
 CompoundPath:
-  $ref: ./path-compound.yaml
+  $ref: ./shapes/path-compound.yaml
 
 Path:
-  $ref: ./path.yaml
+  $ref: ./shapes/path.yaml
+
+PathRectangle:
+  $ref: ./shapes/path-rectangle.yaml
 
 BooleanOp:
   $ref: ./enums/boolean-op.yaml
 
 PathGeometry:
-  $ref: ./path-geometry.yaml
+  $ref: ./shapes/path-geometry.yaml
 
 # Effects
 

@@ -3,5 +3,6 @@ type: string
 enum:
   - SHAPE
   - TEXT
+  - COMPONENT_REFERENCE_LAYER
   - GROUP
   - MASK_GROUP

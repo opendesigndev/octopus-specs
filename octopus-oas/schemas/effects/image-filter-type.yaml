@@ -1,8 +1,0 @@
-description:
-  Image filter type enum.
-
-type: string
-enum:
-  - OPACITY_MULTIPLIER
-  - SKETCH_COLOR_ADJUSTMENT
-  - FIGMA_COLOR_ADJUSTMENT

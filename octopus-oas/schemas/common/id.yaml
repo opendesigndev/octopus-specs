@@ -1,4 +1,0 @@
-description:
-  Identifier unique within the whole document.
-type: string
-minLength: 1

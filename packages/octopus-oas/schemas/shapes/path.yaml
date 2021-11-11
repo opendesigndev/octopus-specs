@@ -1,0 +1,24 @@
+description:
+  Elementary path object containing an actual path geometry.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/PathBase'
+
+  - type: object
+    properties:
+      geometry:
+        $ref: '../schemas.yaml#/PathGeometry'
+
+      cornerRadii:
+        description:
+          An array of corner radii in the path geometry. The length of the array
+          equal is to a number of vertices in the path.
+
+        type: array
+        items:
+          type: number
+          format: float
+
+    required: [geometry]
