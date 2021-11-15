@@ -1,0 +1,34 @@
+description:
+  Text transformation description.
+
+type: object
+
+properties:
+  origin:
+    description:
+      Origin the transformation is relative to - either a parent layer or artboard.
+
+    type: string
+    enum:
+      - LAYER
+      - ARTBOARD
+
+  type:
+    description:
+      Transform type denotes which part of the text is being transformed.
+
+    type: string
+    enum:
+      - BASELINE
+      - TOPLEFT_CORNER
+
+  transform:
+    description:
+      Sub-path transformation relative to the parent path.
+
+    $ref: '../schemas.yaml#/Transform'
+
+required:
+  - origin
+  - type
+  - transform

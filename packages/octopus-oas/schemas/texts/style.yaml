@@ -1,0 +1,98 @@
+description: Text style descriptor.
+type: object
+properties:
+  font:
+    $ref: '../schemas.yaml#/Font'
+
+  fontSize:
+    description:
+      Size of the text in pixels.
+    type: number
+    format: float
+    minimum: 0
+    exclusiveMinimum: true
+
+  lineHeight:
+    description:
+      Line height of the text. If `0` a default line height (for a given
+      font size) is taken directly from the font file.
+    type: number
+    format: float
+    minimum: 0
+    exclusiveMinimum: true
+
+  letterSpacing:
+    description:
+      Text letter spacing (can be negative).
+    type: number
+    format: float
+
+  kerning:
+    description:
+      Describes if kerning feature is enabled in the text.
+    type: boolean
+    default: true
+
+  features:
+    description:
+      An array of OpenType features configuration.
+
+    type: array
+    items:
+      $ref: '../schemas.yaml#/OpenTypeFeature'
+
+  ligatures:
+    description: |
+      Describes a ligature category.
+
+      - `NONE` ligatures disabled
+      - `STANDARD` ligatures that should be used in normal conditions (corresponding to OpenType 'LIGA' feature)
+      - `ALL` use all the ligatures available in a given font
+    type: number
+    enum:
+      - NONE
+      - STANDARD
+      - ALL
+    default: STANDARD
+
+  underline:
+    description:
+      Text underline type.
+    type: string
+    enum:
+      - NONE
+      - SINGLE
+      - DOUBLE
+    default: NONE
+
+  linethrough:
+    description:
+      Describes if the text has line through.
+    type: boolean
+
+  uppercase:
+    description:
+      Describes if the text is transformed to upper case.
+    type: boolean
+
+  lowercase:
+    description:
+      Describes if the text is transformed to lower case.
+    type: boolean
+
+  smallcaps:
+    description: Describes if the text is written in small capitals.
+    type: boolean
+
+  fills:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/FillEffect'
+
+  strokes:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/EffectStroke'
+
+required:
+  - font

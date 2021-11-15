@@ -1,0 +1,25 @@
+description:
+  Representation of a typographic feature as described in OpenType specification.
+
+type: object
+properties:
+
+  tag:
+    description:
+      Feature tag, typically a 4 letter abbreviation of the feature's name.
+
+    type: string
+    minLength: 1
+
+  value:
+    description:
+      For most features, the value is either `1` or `0` standing for the
+      feature to be enabled or disabled respectively. Specific OpenType
+      features might be assigned an arbitrary value.
+
+    type: integer
+    format: int32
+
+required:
+  - tag
+  - value

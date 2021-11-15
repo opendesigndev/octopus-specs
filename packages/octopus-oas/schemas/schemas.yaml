@@ -174,4 +174,22 @@ ShadowConfig:
 # Texts
 
 Text:
-  $ref: '#/TODO'
+  $ref: ./texts/text.yaml
+
+TextStyle:
+  $ref: ./texts/style.yaml
+
+StyleRange:
+  $ref: ./texts/style-range.yaml
+
+Font:
+  $ref: ./texts/font.yaml
+
+TextTransform:
+  $ref: ./texts/transform.yaml
+
+TextFrame:
+  $ref: ./texts/frame.yaml
+
+OpenTypeFeature:
+  $ref: ./texts/open-type-feature.yaml

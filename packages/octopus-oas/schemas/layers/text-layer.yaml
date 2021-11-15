@@ -7,6 +7,6 @@ allOf:
   - type: object
     properties:
       text:
-        $ref: '../schemas.yaml#/TODO'
+        $ref: '../schemas.yaml#/Text'
 
     required: [text]

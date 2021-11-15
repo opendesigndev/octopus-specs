@@ -1,0 +1,28 @@
+description:
+  Font description.
+
+type: object
+
+properties:
+  postScriptName:
+    description:
+      PostScript name of the used font.
+    type: string
+
+  family:
+    description:
+      Common name of the font.
+    type: string
+
+  style:
+    description:
+      Font style (or type; called 'subfamily' in OpenType specification).
+    type: string
+
+  syntheticPostScriptName:
+    description:
+      Marks a font whose `postScriptName` was generated (`<family>-<style>`) due to absence
+      of an actual PostScript name identifier.
+    type: boolean
+
+  required: [postScriptName]

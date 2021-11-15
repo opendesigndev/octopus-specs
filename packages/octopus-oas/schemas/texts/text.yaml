@@ -1,0 +1,73 @@
+description:
+  Text descriptor.
+
+type: object
+properties:
+  value:
+    description:
+      Text content of the text layer.
+
+    type: string
+
+  defaultStyle:
+    description:
+      Text style that is used as a default when no explicit style range
+      covers the particular fragment of a text. Every font style range in
+      `styles` array overrides the `defaultStyle` value.
+
+    $ref: '../schemas.yaml#/TextStyle'
+
+  styles:
+    description:
+      An array containing styles applied to particular ranges of the text.
+
+    type: array
+    items:
+      $ref: '../schemas.yaml#/StyleRange'
+
+  textTransform:
+    $ref: '../schemas.yaml#/TextTransform'
+
+  frame:
+    $ref: '../schemas.yaml#/TextFrame'
+
+  horizontalAlign:
+    description:
+      Horizontal alignment of the text.
+
+    type: string
+    enum:
+      - LEFT
+      - CENTER
+      - RIGHT
+      - JUSTIFY
+    default: LEFT
+
+  verticalAlign:
+    description:
+      Text vertical alignment relative to the whole layer.
+
+    type: string
+    enum:
+      - TOP
+      - CENTER
+      - BOTTOM
+    default: TOP
+
+  baselinePolicy:
+    description: |
+      Defines a way the baseline position is determined.
+
+       - `FIXED` - baseline distance from a layer top is given only by font properties
+       - `CENTER` - baseline is centered within the line (i.e. depends on `lineHeight`)
+
+    type: string
+    enum:
+      - FIXED
+      - CENTER
+    default: CENTER
+
+required:
+  - value
+  - defaultStyle
+  - textTransform

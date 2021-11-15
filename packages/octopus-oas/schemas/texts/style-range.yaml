@@ -1,0 +1,39 @@
+description:
+  Text style defined for particular fragments of the text (text ranges).
+
+type: object
+
+properties:
+  style:
+      $ref: '../schemas.yaml#/TextStyle'
+
+  ranges:
+    description:
+      An array of objects describing the text ranges where `style` is applied.
+      A single range is pair of `from` and `to` indices into the `text.value`
+      string, the range is a semi-open interval, value at index `to` is not
+      part of the range.
+
+    type: array
+    minItems: 1
+    items:
+      type: object
+
+      properties:
+        from:
+          description: Start index of the range.
+          type: integer
+          format: int32
+
+        to:
+          description: End index (not included) of the range.
+          type: integer
+          format: int32
+
+      required:
+        - from
+        - to
+
+required:
+  - style
+  - ranges

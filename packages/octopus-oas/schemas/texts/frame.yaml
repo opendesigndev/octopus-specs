@@ -1,0 +1,22 @@
+description:
+  Describes a text layout in a relation a frame.
+
+type: object
+properties:
+  mode:
+    description:
+      Specifies the behaviour mode of a text inside a frame. `FIXED` mode
+      strictly sets the typeset area according to the `size` property,
+      'AUTO_WIDTH' mode expands frame as needed. 'AUTO_HEIGHT' expands only
+      in the vertical direction, the width stays fixed.
+
+    type: string
+    enum:
+      - AUTO_WIDTH
+      - AUTO_HEIGHT
+      - FIXED
+
+  size:
+    $ref: '../schemas.yaml#/Dimensions'
+
+  required: [mode]
