@@ -19,4 +19,4 @@ properties:
   size:
     $ref: '../schemas.yaml#/Dimensions'
 
-  required: [mode]
+required: [mode]

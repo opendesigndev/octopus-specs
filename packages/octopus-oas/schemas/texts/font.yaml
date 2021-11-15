@@ -25,4 +25,4 @@ properties:
       of an actual PostScript name identifier.
     type: boolean
 
-  required: [postScriptName]
+required: [postScriptName]

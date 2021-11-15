@@ -20,7 +20,7 @@ properties:
         description:
           Layer transformation meta information - original values of the transform actions.
 
-      $ref: '../schemas.yaml#/TransformMeta'
+        $ref: '../schemas.yaml#/TransformMeta'
 
   visible:
     type: boolean

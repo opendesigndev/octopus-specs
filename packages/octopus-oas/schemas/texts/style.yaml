@@ -48,7 +48,7 @@ properties:
       - `NONE` ligatures disabled
       - `STANDARD` ligatures that should be used in normal conditions (corresponding to OpenType 'LIGA' feature)
       - `ALL` use all the ligatures available in a given font
-    type: number
+    type: string
     enum:
       - NONE
       - STANDARD

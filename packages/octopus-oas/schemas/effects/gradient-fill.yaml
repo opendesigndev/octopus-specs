@@ -5,17 +5,15 @@ type: object
 
 allOf:
   - $ref: '../schemas.yaml#/EffectBase'
-
   - type: object
     properties:
-
       gradient:
         type: object
         properties:
-          - type:
-              $ref: './gradient-type.yaml'
+          type:
+            $ref: './gradient-type.yaml'
 
-          - colors:
+          colors:
             type: array
             items:
               $ref: './color-stop.yaml'
