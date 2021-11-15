@@ -11,7 +11,7 @@ TS_FILE=${DIST_DIR}/octopus.ts
 
 echo Converting Octopus OAS into TypeScript interfaces ...
 ${WORKSPACE_ROOT}/node_modules/.bin/openapi-typescript \
-    ${PROJECT_ROOT}/node_modules/@opendesign/octopus-oas/dist/openapi.json \
+    ${PROJECT_ROOT}/node_modules/@avocode/octopus-oas/dist/openapi.json \
     --output ${TS_FILE}
 
 echo Formatting output with prettier...

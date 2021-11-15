@@ -10,8 +10,8 @@
   "files": [],
   "scripts": {
     "-- BUILD --": "",
-    "build-octopus-oas-json": "yarn workspace @opendesign/octopus-oas run build",
-    "build-octopus-ts": "yarn workspace @opendesign/octopus-ts run generate",
+    "build-octopus-oas-json": "yarn workspace @avocode/octopus-oas run build",
+    "build-octopus-ts": "yarn workspace @avocode/octopus-ts run generate",
     "build": "yarn run build-octopus-oas-json && yarn run build-octopus-ts",
     "-- PUBLISH --": ""
   },
