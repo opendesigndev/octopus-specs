@@ -14,8 +14,8 @@ before_script:
 octopus-openapi-json:
   stage: build
   script:
-    - scripts/assemble.sh
+    yarn build
 
   artifacts:
     paths:
-      - dist/openapi.json
+      - packages/octopus-oas/dist/openapi.json
