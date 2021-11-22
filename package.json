@@ -17,6 +17,6 @@
     "version:octopus-ts": "yarn workspace @avocode/octopus-ts version --new-version $npm_package_version --no-git-tag-version",
     "postversion": "yarn version:octopus-oas && yarn version:octopus-ts --no-git-tag-version",
     "--PUBLISH --": "",
-    "release": "yarn workspaces run publish"
+    "release": "yarn workspaces run release"
   }
 }

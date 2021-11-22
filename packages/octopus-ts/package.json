@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "generate": "./scripts/generate-ts.sh",
-    "publish": "yarn publish --non-interactive"
+    "release": "yarn publish --non-interactive"
   },
   "dependencies": {},
   "devDependencies": {
