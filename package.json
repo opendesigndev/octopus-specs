@@ -1,19 +1,22 @@
 {
   "name": "@opendesign/octopus-specs",
+  "version": "3.0.0-alpha.5",
   "private": true,
   "workspaces": [
     "packages/octopus-oas",
-    "packages/octopus-ts",
-    "packages/manifest-oas",
-    "packages/manifest-ts"
+    "packages/octopus-ts"
   ],
   "files": [],
   "scripts": {
     "-- BUILD --": "",
-    "build-octopus-oas-json": "yarn workspace @avocode/octopus-oas run build",
-    "build-octopus-ts": "yarn workspace @avocode/octopus-ts run generate",
-    "build": "yarn run build-octopus-oas-json && yarn run build-octopus-ts",
-    "-- PUBLISH --": ""
-  },
-  "version": "0.0.1"
+    "build:octopus-oas-json": "yarn workspace @avocode/octopus-oas run build",
+    "build:octopus-ts": "yarn workspace @avocode/octopus-ts run generate",
+    "build": "yarn run build:octopus-oas-json && yarn run build:octopus-ts",
+    "-- VERSION --": "",
+    "version:octopus-oas": "yarn workspace @avocode/octopus-oas version --new-version $npm_package_version --no-git-tag-version",
+    "version:octopus-ts": "yarn workspace @avocode/octopus-ts version --new-version $npm_package_version --no-git-tag-version",
+    "postversion": "yarn version:octopus-oas && yarn version:octopus-ts --no-git-tag-version",
+    "--PUBLISH --": "",
+    "release": "yarn workspaces run release"
+  }
 }

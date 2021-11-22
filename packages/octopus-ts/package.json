@@ -1,12 +1,13 @@
 {
   "name": "@avocode/octopus-ts",
-  "version": "3.0.0-alpha.2",
+  "version": "3.0.0-alpha.5",
   "files": [
     "dist/octopus.ts",
     "index.ts"
   ],
   "scripts": {
-    "generate": "./scripts/generate-ts.sh"
+    "generate": "./scripts/generate-ts.sh",
+    "release": "yarn publish --non-interactive"
   },
   "dependencies": {},
   "devDependencies": {

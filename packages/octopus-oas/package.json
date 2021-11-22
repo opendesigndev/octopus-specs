@@ -1,11 +1,12 @@
 {
   "name": "@avocode/octopus-oas",
-  "version": "3.0.0-alpha.2",
+  "version": "3.0.0-alpha.5",
   "files": [
     "dist/openapi.json"
   ],
   "scripts": {
-    "build": "./scripts/assemble.sh"
+    "build": "./scripts/assemble.sh",
+    "release": "yarn publish --non-interactive"
   },
   "devDependencies": {
     "@apidevtools/swagger-cli": "4.0.4"
