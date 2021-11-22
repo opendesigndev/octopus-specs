@@ -6,7 +6,8 @@
     "index.ts"
   ],
   "scripts": {
-    "generate": "./scripts/generate-ts.sh"
+    "generate": "./scripts/generate-ts.sh",
+    "publish": "yarn publish --non-interactive"
   },
   "dependencies": {},
   "devDependencies": {
