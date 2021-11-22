@@ -3,4 +3,4 @@ convert.sh
 dist
 node_modules
 tmp
-
+release.sh
