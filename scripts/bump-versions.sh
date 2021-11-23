@@ -1,33 +1,28 @@
 #!/bin/sh
 
 if [ -n "`git status --porcelain`" ]; then
-    echo "Release ABORTED, repository contains uncommited changes and/or untracked files."
+    echo "ABORTED, repository contains uncommited changes and/or untracked files."
     exit 1
 fi
 
 case $1 in
-    --prerelease)
-        echo Pre-release...
+    --alpha)
         VERSION_ARGS="--preid alpha --prerelease"
         ;;
 
     --patch)
-        echo Patch release...
         VERSION_ARGS="--patch"
         ;;
 
     --minor)
-        echo Minor release...
         VERSION_ARGS="--minor"
         ;;
 
     --major)
-        echo Major release...
         VERSION_ARGS="--major"
         ;;
 
     *)
-        echo patch release "(default)"...
         VERSION_ARGS="--patch"
         ;;
 esac
@@ -47,4 +42,4 @@ VERSION=`git log -1 --pretty=format:%B`
 git tag -d $VERSION
 git tag -a -m $VERSION $VERSION
 
-echo Released $VERSION
+echo Packages bumped to version: $VERSION
