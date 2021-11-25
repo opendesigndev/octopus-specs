@@ -20,6 +20,7 @@ build-all:
   artifacts:
     paths:
       - packages/octopus-oas/dist/openapi.json
+      - packages/octopus-ts/dist
 
 
 release:
