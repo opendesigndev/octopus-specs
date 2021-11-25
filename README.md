@@ -9,7 +9,7 @@ The project is setup as a mono-repo (using [Yarn Workspaces](https://classic.yar
 - `@avocode/manifest-oas` *TODO* Octopus Manifest OpenAPI v3 Specification
 - `@avocode/manifest-ts` *TODO*
 
-[##](##) Development
+## Development
 
 Both the OAS projects contain `openapi.yaml` file as a specs definition entry-point, all of the actual schema definitions are in placed in `schemas` sub-directory.
 
@@ -17,7 +17,7 @@ Specification source is a structure of individual mutually referenced `.yaml` fi
 
 The specification development should be only a matter of updating the schema files. There's `yarn build` script at the top-level as well as in each workspace that creates the output and runs liters where needed.
 
-[##](##) Release
+## Release
 
 ### Version Bump
 
