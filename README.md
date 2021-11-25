@@ -5,7 +5,7 @@ Octopus specifications and related TypeScript type definitions.
 The project is setup as a mono-repo (using [Yarn Workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/)), contains following packages:
 
 - `@avocode/octopus-oas` OpenAPI v3 Specification of the Octopus format
-- `@avocode/octopus-ts`  TypeScript definitions [auto generated](auto-generated) from `octopus-oas`
+- `@avocode/octopus-ts`  TypeScript definitions auto generated from `octopus-oas`
 - `@avocode/manifest-oas` *TODO* Octopus Manifest OpenAPI v3 Specification
 - `@avocode/manifest-ts` *TODO*
 
