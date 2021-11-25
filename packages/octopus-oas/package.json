@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "build": "./scripts/assemble.sh",
-    "release": "yarn publish --non-interactive"
+    "release": "yarn publish --non-interactive",
+    "version:bump": "yarn version --no-git-tag-version --new-version"
   },
   "devDependencies": {
     "@apidevtools/swagger-cli": "4.0.4"
