@@ -13,15 +13,6 @@ properties:
       - LAYER
       - ARTBOARD
 
-  type:
-    description:
-      Transform type denotes which part of the text is being transformed.
-
-    type: string
-    enum:
-      - BASELINE
-      - TOPLEFT_CORNER
-
   transform:
     description:
       Sub-path transformation relative to the parent path.
