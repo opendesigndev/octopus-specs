@@ -2,8 +2,6 @@
 description: Blend modes enum.
 type: string
 enum:
-  - BLEND_DIVIDE
-  - BLEND_SUBTRACTION
   - COLOR
   - COLOR_BURN
   - COLOR_DODGE
@@ -11,15 +9,16 @@ enum:
   - DARKER_COLOR
   - DIFFERENCE
   - DISSOLVE
+  - DIVIDE
   - EXCLUSION
   - HARD_LIGHT
   - HARD_MIX
   - HUE
   - LIGHTEN
   - LIGHTER_COLOR
-  - LIGHTEN_BURN
-  - LIGHTEN_DODGE
-  - LIGHTEN_LIGHT
+  - LINEAR_BURN
+  - LINEAR_DODGE
+  - LINEAR_LIGHT
   - LUMINOSITY
   - MULTIPLY
   - OVERLAY
@@ -28,5 +27,6 @@ enum:
   - SATURATION
   - SCREEN
   - SOFT_LIGHT
+  - SUBTRACT
   - VIVID_LIGHT
   - NORMAL
