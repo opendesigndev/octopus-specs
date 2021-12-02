@@ -91,6 +91,3 @@ properties:
     type: array
     items:
       $ref: '../schemas.yaml#/EffectStroke'
-
-required:
-  - font
