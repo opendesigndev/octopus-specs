@@ -1,5 +1,20 @@
 # specs-renderer
 
+## Running specs viewer
+
+```bash
+yarn
+yarn dev
+open http://localhost:3000
+```
+
+## Building
+
+```bash
+yarn
+yarn build
+```
+
 ## How I created src/octopus-format
 
 ```bash
@@ -14,6 +29,6 @@ rm -rf open-design-docs
 This should allow to update the subtree from upstream repo somehow but I did not
 test that hypothesis.
 
-There are also two files in layouts folder copied verbatim (sans comment on top)
-from open-design-docs too. Also src/next/router and src/.../Markdown.tsx are
+There are also few files in `layouts` folder copied verbatim (sans comment on
+top) from open-design-docs too. Also src/next/router and src/.../Markdown.tsx are
 there so that no patching of original source is neccessary.
