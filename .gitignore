@@ -1,6 +1,9 @@
 TODO.md
 convert.sh
 dist
+dist-ssr
 node_modules
 tmp
 release.sh
+.DS_Store
+*.local
