@@ -7,3 +7,4 @@ tmp
 release.sh
 .DS_Store
 *.local
+yarn-error.log
