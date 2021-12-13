@@ -32,4 +32,4 @@ properties:
 required:
   - purpose
   - fillRule
-  - shape
+  - path
