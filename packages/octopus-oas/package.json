@@ -1,6 +1,6 @@
 {
   "name": "@avocode/octopus-oas",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0-alpha.9",
   "files": [
     "dist/openapi.json"
   ],
