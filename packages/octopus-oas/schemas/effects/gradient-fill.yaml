@@ -13,7 +13,7 @@ allOf:
           type:
             $ref: './gradient-type.yaml'
 
-          colors:
+          stops:
             type: array
             items:
               $ref: './color-stop.yaml'
