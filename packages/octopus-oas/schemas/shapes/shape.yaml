@@ -31,5 +31,4 @@ properties:
 
 required:
   - purpose
-  - fillRule
   - path
