@@ -1,14 +1,14 @@
 description:
-  Abstract effect definition.
+  Fill effect definition.
 
 oneOf:
-  - $ref: '../schemas.yaml#/EffectColorFill'
-  - $ref: '../schemas.yaml#/EffectGradientFill'
-  - $ref: '../schemas.yaml#/EffectImageFill'
+  - $ref: '../schemas.yaml#/FillColor'
+  - $ref: '../schemas.yaml#/FillGradient'
+  - $ref: '../schemas.yaml#/FillImage'
 
 discriminator:
   propertyName: type
   mapping:
-    COLOR: '#/components/schemas/EffectColorFill'
-    GRADIENT: '#/components/schemas/EffectGradientFill'
-    IMAGE: '#/components/schemas/EffectImageFill'
+    COLOR: '#/components/schemas/FillColor'
+    GRADIENT: '#/components/schemas/FillGradient'
+    IMAGE: '#/components/schemas/FillImage'

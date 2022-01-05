@@ -167,17 +167,17 @@ FillType:
 FillBase:
   $ref: ./effects/fill-base.yaml
 
+Fill:
+  $ref: ./effects/fill.yaml
+
 FillColor:
-  $ref: ./effects/color-fill.yaml
+  $ref: ./effects/fill-color.yaml
 
 FillGradient:
-  $ref: ./effects/gradient-fill.yaml
+  $ref: ./effects/fill-gradient.yaml
 
 FillImage:
-  $ref: ./effects/image-fill.yaml
-
-Fill:
-  $ref: ./effects/fill-effect.yaml
+  $ref: ./effects/fill-image.yaml
 
 FillPositioning:
   $ref: ./effects/fill-positioning.yaml
