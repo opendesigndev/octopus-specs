@@ -91,4 +91,4 @@ properties:
   strokes:
     type: array
     items:
-      $ref: '../schemas.yaml#/EffectStroke'
+      $ref: '../schemas.yaml#/Stroke'

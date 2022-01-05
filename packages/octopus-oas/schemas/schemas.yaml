@@ -135,8 +135,8 @@ EffectType:
 EffectBase:
   $ref: ./effects/effect-base.yaml
 
-EffectRasterStroke:
-  $ref: ./effects/raster-stroke.yaml
+EffectStroke:
+  $ref: ./effects/effect-stroke.yaml
 
 EffectDropShadow:
   $ref: ./effects/drop-shadow.yaml
@@ -183,7 +183,7 @@ FillPositioning:
   $ref: ./effects/fill-positioning.yaml
 
 # Effect-like: Stroke
-EffectStroke:
+Stroke:
   $ref: ./effects/stroke.yaml
 
 StrokeConfig:
