@@ -80,6 +80,7 @@ properties:
       - UPPERCASE
       - LOWERCASE
       - SMALL_CAPS
+      - TITLE_CASE
     default: NONE
 
   fills:
