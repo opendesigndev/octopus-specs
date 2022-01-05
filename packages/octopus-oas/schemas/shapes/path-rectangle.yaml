@@ -8,22 +8,22 @@ allOf:
 
   - type: object
     properties:
-      l:
+      x0:
         description: Rectangle's left side coordinate.
         type: number
         format: float
 
-      r:
-        description: Rectangle's right side coordinate.
-        type: number
-        format: float
-
-      t:
+      y0:
         description: Rectangle's top coordinate.
         type: number
         format: float
 
-      b:
+      x1:
+        description: Rectangle's right side coordinate.
+        type: number
+        format: float
+
+      y1:
         description: Rectangle's bottom coordinate.
         type: number
         format: float
@@ -40,4 +40,4 @@ allOf:
         minItems: 4
         maxItems: 4
 
-    required: [l, r, t, b]
+    required: [x0, y0, x1, y1]
