@@ -1,0 +1,15 @@
+description:
+  Gaussian blur effect.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    properties:
+      blur:
+        type: number
+        format: float
+
+    required: [blur]

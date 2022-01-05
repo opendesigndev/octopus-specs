@@ -138,6 +138,12 @@ EffectInnerGlow:
 EffectOuterGlow:
   $ref: ./effects/outer-glow.yaml
 
+EffectBlur:
+  $ref: ./effects/blur.yaml
+
+EffectBackgroundBlur:
+  $ref: ./effects/background-blur.yaml
+
 EffectOther:
   $ref: ./effects/other.yaml
 
@@ -155,6 +161,9 @@ ImageFilterBase:
 
 ImageFilterOpacityMultiplier:
   $ref: ./effects/image-filter-opacity-multiplier.yaml
+
+ImageFilterBrightnessAdjust:
+  $ref: ./effects/image-filter-brightness-adjust.yaml
 
 ImageFilterSketchAdjust:
   $ref: ./effects/image-filter-sketch-adjust.yaml

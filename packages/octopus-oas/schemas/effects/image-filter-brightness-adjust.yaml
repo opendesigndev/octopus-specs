@@ -1,0 +1,13 @@
+description:
+  Brightness adjusting image filter.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/ImageFilterBase'
+
+  - type: object
+    properties:
+      brightness:
+        type: number
+        format: float

@@ -13,4 +13,5 @@ enum:
   - OUTER_GLOW
   - INNER_GLOW
   - BLUR
+  - BACKGROUND_BLUR
   - OTHER
