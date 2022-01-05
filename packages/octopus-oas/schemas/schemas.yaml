@@ -135,6 +135,9 @@ EffectType:
 EffectBase:
   $ref: ./effects/effect-base.yaml
 
+EffectOverlay:
+  $ref: ./effects/effect-overlay.yaml
+
 EffectStroke:
   $ref: ./effects/effect-stroke.yaml
 

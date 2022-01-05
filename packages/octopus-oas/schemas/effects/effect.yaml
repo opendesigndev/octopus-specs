@@ -2,6 +2,7 @@ description:
   Abstract effect definition.
 
 oneOf:
+  - $ref: '../schemas.yaml#/EffectOverlay'
   - $ref: '../schemas.yaml#/EffectStroke'
   - $ref: '../schemas.yaml#/EffectDropShadow'
   - $ref: '../schemas.yaml#/EffectInnerShadow'
@@ -14,6 +15,7 @@ oneOf:
 discriminator:
   propertyName: type
   mapping:
+    OVERLAY: '#/components/schemas/EffectOverlay'
     STROKE: '#/components/schemas/EffectStroke'
     DROP_SHADOW: '#/components/schemas/EffectDropShadow'
     INNER_SHADOW: '#/components/schemas/EffectInnerShadow'

@@ -1,0 +1,14 @@
+description:
+  Overlay effect description.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    fill:
+      stroke:
+        $ref: '../schemas.yaml#/Fill'
+
+    required: [fill]

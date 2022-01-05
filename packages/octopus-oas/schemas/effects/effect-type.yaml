@@ -3,6 +3,7 @@ description:
 
 type: string
 enum:
+  - OVERLAY
   - STROKE
   - DROP_SHADOW
   - INNER_SHADOW
