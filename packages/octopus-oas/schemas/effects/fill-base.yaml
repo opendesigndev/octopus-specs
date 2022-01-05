@@ -1,0 +1,14 @@
+description:
+  Common data fields of all fills.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectLikeBase'
+
+  - type: object
+    properties:
+      type:
+        $ref: '../schemas.yaml#/FillType'
+
+required: [type]

@@ -1,0 +1,8 @@
+description:
+  Fill type enum.
+
+type: string
+enum:
+  - COLOR
+  - GRADIENT
+  - IMAGE

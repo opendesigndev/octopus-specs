@@ -22,7 +22,7 @@ properties:
   fills:
     type: array
     items:
-      $ref: '../schemas.yaml#/FillEffect'
+      $ref: '../schemas.yaml#/Fill'
 
   strokes:
     type: array

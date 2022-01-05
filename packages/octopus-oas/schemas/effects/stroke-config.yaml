@@ -21,7 +21,7 @@ properties:
       Stroke alignment relative to the shape outline.
 
   fill:
-    $ref: '../schemas.yaml#/FillEffect'
+    $ref: '../schemas.yaml#/Fill'
     description:
       Stroke's fill description.
 

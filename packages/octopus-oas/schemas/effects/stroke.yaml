@@ -4,7 +4,7 @@ description:
 type: object
 
 allOf:
-  - $ref: '../schemas.yaml#/EffectBase'
+  - $ref: '../schemas.yaml#/EffectLikeBase'
 
   - type: object
     properties:

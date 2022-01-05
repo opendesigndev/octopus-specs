@@ -2,13 +2,13 @@ description:
   Fill effect definition.
 
 oneOf:
-  - $ref: '../schemas.yaml#/EffectColorFill'
-  - $ref: '../schemas.yaml#/EffectGradientFill'
-  - $ref: '../schemas.yaml#/EffectImageFill'
+  - $ref: '../schemas.yaml#/FillColor'
+  - $ref: '../schemas.yaml#/FillGradient'
+  - $ref: '../schemas.yaml#/FillImage'
 
 discriminator:
   propertyName: type
   mapping:
-    COLOR_FILL: '#/components/schemas/EffectColorFill'
-    GRADIENT_FILL: '#/components/schemas/EffectGradientFill'
-    IMAGE_FILL: '#/components/schemas/EffectImageFill'
+    COLOR: '#/components/schemas/FillColor'
+    GRADIENT: '#/components/schemas/FillGradient'
+    IMAGE: '#/components/schemas/FillImage'

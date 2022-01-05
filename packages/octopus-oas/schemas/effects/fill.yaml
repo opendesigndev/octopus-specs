@@ -1,0 +1,14 @@
+description:
+  Abstract effect definition.
+
+oneOf:
+  - $ref: '../schemas.yaml#/EffectColorFill'
+  - $ref: '../schemas.yaml#/EffectGradientFill'
+  - $ref: '../schemas.yaml#/EffectImageFill'
+
+discriminator:
+  propertyName: type
+  mapping:
+    COLOR: '#/components/schemas/EffectColorFill'
+    GRADIENT: '#/components/schemas/EffectGradientFill'
+    IMAGE: '#/components/schemas/EffectImageFill'

@@ -97,31 +97,43 @@ BooleanOp:
 PathGeometry:
   $ref: ./shapes/path-geometry.yaml
 
-# Effects
+# Effect-like entities (effects, fills, strokes)
 
-EffectType:
-  $ref: ./effects/effect-type.yaml
+EffectLikeBase:
+  $ref: ./effects/effect-like-base.yaml
+
+# Image filters
+ImageFilterType:
+  $ref: ./effects/image-filter-type.yaml
+
+ImageFilter:
+  $ref: ./effects/image-filter.yaml
+
+ImageFilterBase:
+  $ref: ./effects/image-filter-base.yaml
+
+ImageFilterOpacityMultiplier:
+  $ref: ./effects/image-filter-opacity-multiplier.yaml
+
+ImageFilterBrightnessAdjust:
+  $ref: ./effects/image-filter-brightness-adjust.yaml
+
+ImageFilterSketchAdjust:
+  $ref: ./effects/image-filter-sketch-adjust.yaml
+
+ImageFilterFigmaAdjust:
+  $ref: ./effects/image-filter-figma-adjust.yaml
+
+# Effect-like: Layer Effects
 
 Effect:
   $ref: ./effects/effect.yaml
 
+EffectType:
+  $ref: ./effects/effect-type.yaml
+
 EffectBase:
   $ref: ./effects/effect-base.yaml
-
-EffectColorFill:
-  $ref: ./effects/color-fill.yaml
-
-EffectGradientFill:
-  $ref: ./effects/gradient-fill.yaml
-
-EffectImageFill:
-  $ref: ./effects/image-fill.yaml
-
-FillEffect:
-  $ref: ./effects/fill-effect.yaml
-
-EffectStroke:
-  $ref: ./effects/stroke.yaml
 
 EffectRasterStroke:
   $ref: ./effects/raster-stroke.yaml
@@ -147,29 +159,32 @@ EffectBackgroundBlur:
 EffectOther:
   $ref: ./effects/other.yaml
 
+# Effect-like: Fills
+
+FillType:
+  $ref: ./effects/fill-type.yaml
+
+FillBase:
+  $ref: ./effects/fill-base.yaml
+
+FillColor:
+  $ref: ./effects/color-fill.yaml
+
+FillGradient:
+  $ref: ./effects/gradient-fill.yaml
+
+FillImage:
+  $ref: ./effects/image-fill.yaml
+
+Fill:
+  $ref: ./effects/fill-effect.yaml
+
 FillPositioning:
   $ref: ./effects/fill-positioning.yaml
 
-ImageFilterType:
-  $ref: ./effects/image-filter-type.yaml
-
-ImageFilter:
-  $ref: ./effects/image-filter.yaml
-
-ImageFilterBase:
-  $ref: ./effects/image-filter-base.yaml
-
-ImageFilterOpacityMultiplier:
-  $ref: ./effects/image-filter-opacity-multiplier.yaml
-
-ImageFilterBrightnessAdjust:
-  $ref: ./effects/image-filter-brightness-adjust.yaml
-
-ImageFilterSketchAdjust:
-  $ref: ./effects/image-filter-sketch-adjust.yaml
-
-ImageFilterFigmaAdjust:
-  $ref: ./effects/image-filter-figma-adjust.yaml
+# Effect-like: Stroke
+EffectStroke:
+  $ref: ./effects/stroke.yaml
 
 StrokeConfig:
   $ref: ./effects/stroke-config.yaml
