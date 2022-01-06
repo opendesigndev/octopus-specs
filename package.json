@@ -2,7 +2,11 @@
   "name": "@opendesign/octopus-specs",
   "version": "3.0.0-alpha.11",
   "private": true,
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/octopus-oas",
+    "packages/octopus-ts",
+    "packages/specs-renderer"
+  ],
   "files": [],
   "scripts": {
     "-- BUILD --": "",
