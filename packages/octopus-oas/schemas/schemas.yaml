@@ -97,11 +97,6 @@ BooleanOp:
 PathGeometry:
   $ref: ./shapes/path-geometry.yaml
 
-# Effect-like entities (effects, fills, strokes)
-
-EffectLikeBase:
-  $ref: ./effects/effect-like-base.yaml
-
 # Image filters
 ImageFilterType:
   $ref: ./effects/image-filter-type.yaml
@@ -136,10 +131,10 @@ EffectBase:
   $ref: ./effects/effect-base.yaml
 
 EffectOverlay:
-  $ref: ./effects/effect-overlay.yaml
+  $ref: ./effects/overlay.yaml
 
 EffectStroke:
-  $ref: ./effects/effect-stroke.yaml
+  $ref: ./effects/stroke.yaml
 
 EffectDropShadow:
   $ref: ./effects/drop-shadow.yaml
@@ -162,41 +157,35 @@ EffectBackgroundBlur:
 EffectOther:
   $ref: ./effects/other.yaml
 
+ShadowConfig:
+  $ref: ./effects/shadow-config.yaml
+
 # Effect-like: Fills
 
 FillType:
-  $ref: ./effects/fill-type.yaml
+  $ref: ./fills/fill-type.yaml
 
 FillBase:
-  $ref: ./effects/fill-base.yaml
+  $ref: ./fills/fill-base.yaml
 
 Fill:
-  $ref: ./effects/fill.yaml
+  $ref: ./fills/fill.yaml
 
 FillColor:
-  $ref: ./effects/fill-color.yaml
+  $ref: ./fills/fill-color.yaml
 
 FillGradient:
-  $ref: ./effects/fill-gradient.yaml
+  $ref: ./fills/fill-gradient.yaml
 
 FillImage:
-  $ref: ./effects/fill-image.yaml
+  $ref: ./fills/fill-image.yaml
 
 FillPositioning:
-  $ref: ./effects/fill-positioning.yaml
+  $ref: ./fills/fill-positioning.yaml
 
 # Effect-like: Stroke
 Stroke:
-  $ref: ./effects/stroke.yaml
-
-StrokeConfig:
-  $ref: ./effects/stroke-config.yaml
-
-VectorStrokeConfig:
-  $ref: ./effects/vector-stroke-config.yaml
-
-ShadowConfig:
-  $ref: ./effects/shadow-config.yaml
+  $ref: ./stroke/vector-stroke.yaml
 
 # Texts
 

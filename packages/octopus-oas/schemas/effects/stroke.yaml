@@ -1,14 +1,35 @@
 description:
-  (Vector) stroke effect description.
+  Raster stroke effect description.
 
 type: object
 
 allOf:
-  - $ref: '../schemas.yaml#/EffectLikeBase'
+  - $ref: '../schemas.yaml#/EffectBase'
 
   - type: object
     properties:
-      stroke:
-        $ref: '../schemas.yaml#/VectorStrokeConfig'
+      thickness:
+        type: number
+        format: float
+        minimum: 0
+        description:
+          Width of the border in pixels.
 
-    required: [stroke]
+      position:
+        type: string
+        enum:
+          - CENTER
+          - INSIDE
+          - OUTSIDE
+        description:
+          Stroke alignment relative to the shape outline.
+
+      fill:
+        $ref: '../schemas.yaml#/Fill'
+        description:
+          Stroke's fill description.
+
+    required:
+      - thickness
+      - position
+      - fill
