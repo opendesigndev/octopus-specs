@@ -7,7 +7,8 @@ allOf:
   - $ref: '../schemas.yaml#/EffectBase'
 
   - type: object
-    overlay:
-      $ref: '../schemas.yaml#/Fill'
+    properties:
+      overlay:
+        $ref: '../schemas.yaml#/Fill'
 
-    required: [fill]
+    required: [overlay]
