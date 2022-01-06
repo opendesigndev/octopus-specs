@@ -97,7 +97,36 @@ BooleanOp:
 PathGeometry:
   $ref: ./shapes/path-geometry.yaml
 
-# Image filters
+# Fills
+
+FillType:
+  $ref: ./fills/fill-type.yaml
+
+FillBase:
+  $ref: ./fills/fill-base.yaml
+
+Fill:
+  $ref: ./fills/fill.yaml
+
+FillColor:
+  $ref: ./fills/fill-color.yaml
+
+FillGradient:
+  $ref: ./fills/fill-gradient.yaml
+
+FillImage:
+  $ref: ./fills/fill-image.yaml
+
+FillPositioning:
+  $ref: ./fills/fill-positioning.yaml
+
+# Stroke
+
+Stroke:
+  $ref: ./stroke/vector-stroke.yaml
+
+# Image Filters
+
 ImageFilterType:
   $ref: ./effects/image-filter-type.yaml
 
@@ -119,7 +148,7 @@ ImageFilterSketchAdjust:
 ImageFilterFigmaAdjust:
   $ref: ./effects/image-filter-figma-adjust.yaml
 
-# Effect-like: Layer Effects
+# Effects
 
 Effect:
   $ref: ./effects/effect.yaml
@@ -159,33 +188,6 @@ EffectOther:
 
 ShadowConfig:
   $ref: ./effects/shadow-config.yaml
-
-# Effect-like: Fills
-
-FillType:
-  $ref: ./fills/fill-type.yaml
-
-FillBase:
-  $ref: ./fills/fill-base.yaml
-
-Fill:
-  $ref: ./fills/fill.yaml
-
-FillColor:
-  $ref: ./fills/fill-color.yaml
-
-FillGradient:
-  $ref: ./fills/fill-gradient.yaml
-
-FillImage:
-  $ref: ./fills/fill-image.yaml
-
-FillPositioning:
-  $ref: ./fills/fill-positioning.yaml
-
-# Effect-like: Stroke
-Stroke:
-  $ref: ./stroke/vector-stroke.yaml
 
 # Texts
 
