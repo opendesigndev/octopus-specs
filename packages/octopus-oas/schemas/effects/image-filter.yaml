@@ -3,7 +3,7 @@ description:
 
 oneOf:
   - $ref: '../schemas.yaml#/ImageFilterOpacityMultiplier'
-  - $ref: '../schemas.yaml#/ImageFilterBrightnessAdjust'
+  - $ref: '../schemas.yaml#/ImageFilterXdBrightnessAdjust'
   - $ref: '../schemas.yaml#/ImageFilterSketchAdjust'
   - $ref: '../schemas.yaml#/ImageFilterFigmaAdjust'
 
@@ -11,6 +11,6 @@ discriminator:
   propertyName: type
   mapping:
     OPACITY_MULTIPLIER: '#/components/schemas/ImageFilterOpacityMultiplier'
-    BRIGHTNESS_ADJUSTMENT: '#/components/schemas/ImageFilterBrightnessAdjust'
+    XD_BRIGHTNESS_ADJUSTMENT: '#/components/schemas/ImageFilterXdBrightnessAdjust'
     SKETCH_COLOR_ADJUSTMENT: '#/components/schemas/ImageFilterSketchAdjust'
     FIGMA_COLOR_ADJUSTMENT: '#/components/schemas/ImageFilterFigmaAdjust'

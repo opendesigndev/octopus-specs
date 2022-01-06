@@ -115,8 +115,8 @@ ImageFilterBase:
 ImageFilterOpacityMultiplier:
   $ref: ./effects/image-filter-opacity-multiplier.yaml
 
-ImageFilterBrightnessAdjust:
-  $ref: ./effects/image-filter-brightness-adjust.yaml
+ImageFilterXdBrightnessAdjust:
+  $ref: ./effects/image-filter-xd-brightness-adjust.yaml
 
 ImageFilterSketchAdjust:
   $ref: ./effects/image-filter-sketch-adjust.yaml

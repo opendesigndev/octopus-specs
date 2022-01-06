@@ -1,5 +1,5 @@
 description:
-  Gaussian blur effect.
+  Blur effect description.
 
 type: object
 
@@ -11,5 +11,10 @@ allOf:
       blur:
         type: number
         format: float
+
+      filters:
+        type: array
+        items:
+          $ref: '../schemas.yaml#/ImageFilter'
 
     required: [blur]
