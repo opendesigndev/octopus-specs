@@ -1,6 +1,7 @@
 TODO.md
 convert.sh
 dist
+dist-ssr
 node_modules
 tmp
 release.sh
@@ -8,3 +9,5 @@ yarn-error.log
 *option_a.yaml
 *option_b.yaml
 path_type_common.yaml
+.DS_Store
+*.local
