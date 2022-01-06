@@ -123,6 +123,9 @@ FillPositioning:
 # Stroke
 
 Stroke:
+  $ref: ./stroke/stroke.yaml
+
+VectorStroke:
   $ref: ./stroke/vector-stroke.yaml
 
 # Image Filters

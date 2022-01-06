@@ -8,28 +8,7 @@ allOf:
 
   - type: object
     properties:
-      thickness:
-        type: number
-        format: float
-        minimum: 0
-        description:
-          Width of the border in pixels.
+      stroke:
+        $ref: '../schemas.yaml#/Stroke'
 
-      position:
-        type: string
-        enum:
-          - CENTER
-          - INSIDE
-          - OUTSIDE
-        description:
-          Stroke alignment relative to the shape outline.
-
-      fill:
-        $ref: '../schemas.yaml#/Fill'
-        description:
-          Stroke's fill description.
-
-    required:
-      - thickness
-      - position
-      - fill
+    required: [stroke]
