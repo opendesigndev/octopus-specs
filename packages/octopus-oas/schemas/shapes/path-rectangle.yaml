@@ -8,11 +8,25 @@ allOf:
 
   - type: object
     properties:
-      position:
-        $ref: '../schemas.yaml#/Vec2'
+      x0:
+        description: Rectangle's left side coordinate.
+        type: number
+        format: float
 
-      dimensions:
-        $ref: '../schemas.yaml#/Dimensions'
+      y0:
+        description: Rectangle's top coordinate.
+        type: number
+        format: float
+
+      x1:
+        description: Rectangle's right side coordinate.
+        type: number
+        format: float
+
+      y1:
+        description: Rectangle's bottom coordinate.
+        type: number
+        format: float
 
       cornerRadii:
         description:
@@ -26,4 +40,4 @@ allOf:
         minItems: 4
         maxItems: 4
 
-    required: [position, dimensions]
+    required: [x0, y0, x1, y1]

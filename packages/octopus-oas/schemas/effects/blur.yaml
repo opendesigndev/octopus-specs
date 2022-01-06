@@ -1,0 +1,20 @@
+description:
+  Blur effect description.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    properties:
+      blur:
+        type: number
+        format: float
+
+      filters:
+        type: array
+        items:
+          $ref: '../schemas.yaml#/ImageFilter'
+
+    required: [blur]

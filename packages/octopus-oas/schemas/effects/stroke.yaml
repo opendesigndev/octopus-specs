@@ -1,5 +1,5 @@
 description:
-  (Vector) stroke effect description.
+  Raster stroke effect description.
 
 type: object
 
@@ -9,6 +9,6 @@ allOf:
   - type: object
     properties:
       stroke:
-        $ref: '../schemas.yaml#/VectorStrokeConfig'
+        $ref: '../schemas.yaml#/Stroke'
 
     required: [stroke]

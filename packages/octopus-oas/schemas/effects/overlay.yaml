@@ -1,0 +1,13 @@
+description:
+  Overlay effect description.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    overlay:
+      $ref: '../schemas.yaml#/Fill'
+
+    required: [fill]

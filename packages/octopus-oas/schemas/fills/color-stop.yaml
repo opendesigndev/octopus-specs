@@ -13,6 +13,7 @@ properties:
       - LINEAR
       - POWER
       - REVERSE_POWER
+    default: LINEAR
 
   interpolationParameter:
     type: number
@@ -24,5 +25,4 @@ properties:
 
 required:
   - position
-  - interpolation
   - color

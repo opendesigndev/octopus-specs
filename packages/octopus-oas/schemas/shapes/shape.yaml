@@ -22,14 +22,13 @@ properties:
   fills:
     type: array
     items:
-      $ref: '../schemas.yaml#/FillEffect'
+      $ref: '../schemas.yaml#/Fill'
 
   strokes:
     type: array
     items:
-      $ref: '../schemas.yaml#/EffectStroke'
+      $ref: '../schemas.yaml#/VectorStroke'
 
 required:
   - purpose
-  - fillRule
-  - shape
+  - path

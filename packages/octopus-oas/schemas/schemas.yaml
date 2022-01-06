@@ -97,52 +97,38 @@ BooleanOp:
 PathGeometry:
   $ref: ./shapes/path-geometry.yaml
 
-# Effects
+# Fills
 
-EffectType:
-  $ref: ./effects/effect-type.yaml
+FillType:
+  $ref: ./fills/fill-type.yaml
 
-Effect:
-  $ref: ./effects/effect.yaml
+FillBase:
+  $ref: ./fills/fill-base.yaml
 
-EffectBase:
-  $ref: ./effects/effect-base.yaml
+Fill:
+  $ref: ./fills/fill.yaml
 
-EffectColorFill:
-  $ref: ./effects/color-fill.yaml
+FillColor:
+  $ref: ./fills/fill-color.yaml
 
-EffectGradientFill:
-  $ref: ./effects/gradient-fill.yaml
+FillGradient:
+  $ref: ./fills/fill-gradient.yaml
 
-EffectImageFill:
-  $ref: ./effects/image-fill.yaml
-
-FillEffect:
-  $ref: ./effects/fill-effect.yaml
-
-EffectStroke:
-  $ref: ./effects/stroke.yaml
-
-EffectRasterStroke:
-  $ref: ./effects/raster-stroke.yaml
-
-EffectDropShadow:
-  $ref: ./effects/drop-shadow.yaml
-
-EffectInnerShadow:
-  $ref: ./effects/inner-shadow.yaml
-
-EffectInnerGlow:
-  $ref: ./effects/inner-glow.yaml
-
-EffectOuterGlow:
-  $ref: ./effects/outer-glow.yaml
-
-EffectOther:
-  $ref: ./effects/other.yaml
+FillImage:
+  $ref: ./fills/fill-image.yaml
 
 FillPositioning:
-  $ref: ./effects/fill-positioning.yaml
+  $ref: ./fills/fill-positioning.yaml
+
+# Stroke
+
+Stroke:
+  $ref: ./stroke/stroke.yaml
+
+VectorStroke:
+  $ref: ./stroke/vector-stroke.yaml
+
+# Image Filters
 
 ImageFilterType:
   $ref: ./effects/image-filter-type.yaml
@@ -156,17 +142,52 @@ ImageFilterBase:
 ImageFilterOpacityMultiplier:
   $ref: ./effects/image-filter-opacity-multiplier.yaml
 
+ImageFilterXdBrightnessAdjust:
+  $ref: ./effects/image-filter-xd-brightness-adjust.yaml
+
 ImageFilterSketchAdjust:
   $ref: ./effects/image-filter-sketch-adjust.yaml
 
 ImageFilterFigmaAdjust:
   $ref: ./effects/image-filter-figma-adjust.yaml
 
-StrokeConfig:
-  $ref: ./effects/stroke-config.yaml
+# Effects
 
-VectorStrokeConfig:
-  $ref: ./effects/vector-stroke-config.yaml
+Effect:
+  $ref: ./effects/effect.yaml
+
+EffectType:
+  $ref: ./effects/effect-type.yaml
+
+EffectBase:
+  $ref: ./effects/effect-base.yaml
+
+EffectOverlay:
+  $ref: ./effects/overlay.yaml
+
+EffectStroke:
+  $ref: ./effects/stroke.yaml
+
+EffectDropShadow:
+  $ref: ./effects/drop-shadow.yaml
+
+EffectInnerShadow:
+  $ref: ./effects/inner-shadow.yaml
+
+EffectInnerGlow:
+  $ref: ./effects/inner-glow.yaml
+
+EffectOuterGlow:
+  $ref: ./effects/outer-glow.yaml
+
+EffectBlur:
+  $ref: ./effects/blur.yaml
+
+EffectBackgroundBlur:
+  $ref: ./effects/background-blur.yaml
+
+EffectOther:
+  $ref: ./effects/other.yaml
 
 ShadowConfig:
   $ref: ./effects/shadow-config.yaml

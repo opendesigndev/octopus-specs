@@ -13,6 +13,6 @@ discriminator:
   mapping:
     SHAPE: '#/components/schemas/ShapeLayer'
     TEXT: '#/components/schemas/TextLayer'
-    COMPONENT_REFERENCE: '#/components/schemas/TextLayer'
+    COMPONENT_REFERENCE: '#/components/schemas/ComponentReferenceLayer'
     MASK_GROUP: '#/components/schemas/MaskGroupLayer'
     GROUP: '#/components/schemas/GroupLayer'

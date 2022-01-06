@@ -70,29 +70,25 @@ properties:
       Describes if the text has line through.
     type: boolean
 
-  uppercase:
+  letterCase:
     description:
-      Describes if the text is transformed to upper case.
-    type: boolean
+      Describes a letter case type.
 
-  lowercase:
-    description:
-      Describes if the text is transformed to lower case.
-    type: boolean
-
-  smallcaps:
-    description: Describes if the text is written in small capitals.
-    type: boolean
+    type: string
+    enum:
+      - NONE
+      - UPPERCASE
+      - LOWERCASE
+      - SMALL_CAPS
+      - TITLE_CASE
+    default: NONE
 
   fills:
     type: array
     items:
-      $ref: '../schemas.yaml#/FillEffect'
+      $ref: '../schemas.yaml#/Fill'
 
   strokes:
     type: array
     items:
-      $ref: '../schemas.yaml#/EffectStroke'
-
-required:
-  - font
+      $ref: '../schemas.yaml#/VectorStroke'

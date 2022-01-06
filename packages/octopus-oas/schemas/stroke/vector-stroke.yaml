@@ -4,7 +4,7 @@ description:
 type: object
 
 allOf:
-  - $ref: '../schemas.yaml#/StrokeConfig'
+  - $ref: '../schemas.yaml#/Stroke'
 
   - type: object
     properties:

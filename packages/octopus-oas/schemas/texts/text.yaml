@@ -56,18 +56,20 @@ properties:
 
   baselinePolicy:
     description: |
-      Defines a way the baseline position is determined.
+      Determines a position of the baseline.
 
-       - `FIXED` - baseline distance from a layer top is given only by font properties
+       - `SET` - baseline is given precisely by the text transform
+       - `FIXED_OFFSET` - baseline is shifted by a fixed distance based on font properties
        - `CENTER` - baseline is centered within the line (i.e. depends on `lineHeight`)
 
     type: string
     enum:
-      - FIXED
+      - SET
+      - FIXED_OFFSET
       - CENTER
-    default: CENTER
 
 required:
   - value
   - defaultStyle
   - textTransform
+  - baselinePolicy

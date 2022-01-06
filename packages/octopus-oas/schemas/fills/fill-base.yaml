@@ -1,22 +1,21 @@
 description:
-  Common data fields of all effects (overlay, shadows, blurs...)
+  Common data fields of all fills.
 
 type: object
 
 properties:
   type:
-    $ref: '../schemas.yaml#/EffectType'
+    $ref: '../schemas.yaml#/FillType'
 
   visible:
     type: boolean
     default: true
     description:
-      Toggles whether the effect is visible.
+      Toggles whether the fill is visible.
 
   blendMode:
-    description: Blend mode of the effect.
+    description: Blend mode of the fill.
     default: NORMAL
     $ref: '../schemas.yaml#/BlendMode'
-
 
 required: [type]
