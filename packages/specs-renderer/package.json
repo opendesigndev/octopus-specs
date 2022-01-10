@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "release": "echo skipping...",
+    "version:bump": "echo skipping..."
   },
   "dependencies": {
     "@avocode/octopus-oas": "^3.0.0-alpha.1",
