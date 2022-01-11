@@ -18,5 +18,8 @@ properties:
     default: NORMAL
     $ref: '../schemas.yaml#/BlendMode'
 
+  basis:
+    description: Determines the basis of an effect (e.g. part of a layer that casts the shadow in case of a "drop shadow" effect).
+    $ref: '../schemas.yaml#/EffectBasis'
 
-required: [type]
+required: [type, basis]

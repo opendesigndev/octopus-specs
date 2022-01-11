@@ -68,6 +68,9 @@ Image:
 MaskBasis:
   $ref: ./enums/mask-basis.yaml
 
+EffectBasis:
+  $ref: ./enums/effect-basis.yaml
+
 # Shapes
 
 Shape:
