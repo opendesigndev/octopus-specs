@@ -41,6 +41,9 @@ Vec2:
 UnitRange:
   $ref: ./common/unit-range.yaml
 
+Rectangle:
+  $ref: ./common/rectangle.yaml
+
 Transform:
   $ref: ./common/transform.yaml
 

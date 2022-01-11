@@ -8,25 +8,8 @@ allOf:
 
   - type: object
     properties:
-      x0:
-        description: Rectangle's left side coordinate.
-        type: number
-        format: float
-
-      y0:
-        description: Rectangle's top coordinate.
-        type: number
-        format: float
-
-      x1:
-        description: Rectangle's right side coordinate.
-        type: number
-        format: float
-
-      y1:
-        description: Rectangle's bottom coordinate.
-        type: number
-        format: float
+      rectangle:
+        $ref: '../schemas.yaml#/Rectangle'
 
       cornerRadii:
         description:
