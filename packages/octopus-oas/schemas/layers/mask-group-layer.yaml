@@ -9,9 +9,13 @@ allOf:
       mask:
         $ref: '../schemas.yaml#/Layer'
 
+      basis:
+        description: Describes the part of a masking layer that in fact serves as the mask.
+        $ref: '../schemas.yaml#/MaskBasis'
+
       layers:
         type: array
         items:
           $ref: '../schemas.yaml#/Layer'
 
-    required: [mask, layers]
+    required: [mask, basis, layers]

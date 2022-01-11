@@ -65,6 +65,9 @@ ImageRef:
 Image:
   $ref: ./common/image.yaml
 
+MaskBasis:
+  $ref: ./enums/mask-basis.yaml
+
 # Shapes
 
 Shape:
@@ -217,3 +220,4 @@ TextFrame:
 
 OpenTypeFeature:
   $ref: ./texts/open-type-feature.yaml
+
