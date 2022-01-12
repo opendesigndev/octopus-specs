@@ -8,6 +8,12 @@ allOf:
 
   - type: object
     properties:
+      visible:
+        type: boolean
+        default: true
+        description:
+          Determines whether is the stroke visible.
+
       style:
         type: string
         enum:
@@ -43,7 +49,6 @@ allOf:
         description:
           A value limiting the extension of a sharp tip created by adjacent
           segments when using `MITER` join.
-
 
       dashing:
         type: array
