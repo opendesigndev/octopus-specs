@@ -9,7 +9,7 @@ allOf:
       mask:
         $ref: '../schemas.yaml#/Layer'
 
-      basis:
+      maskBasis:
         description: Describes the part of a masking layer that in fact serves as the mask.
         $ref: '../schemas.yaml#/MaskBasis'
 
