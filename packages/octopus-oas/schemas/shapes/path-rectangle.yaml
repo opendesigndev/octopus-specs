@@ -23,4 +23,4 @@ allOf:
         minItems: 4
         maxItems: 4
 
-    required: [x0, y0, x1, y1]
+    required: [rectangle]
