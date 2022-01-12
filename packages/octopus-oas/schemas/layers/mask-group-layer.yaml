@@ -18,4 +18,4 @@ allOf:
         items:
           $ref: '../schemas.yaml#/Layer'
 
-    required: [mask, basis, layers]
+    required: [mask, maskBasis, layers]
