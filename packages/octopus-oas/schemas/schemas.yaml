@@ -212,9 +212,6 @@ StyleRange:
 Font:
   $ref: ./texts/font.yaml
 
-TextTransform:
-  $ref: ./texts/transform.yaml
-
 TextFrame:
   $ref: ./texts/frame.yaml
 

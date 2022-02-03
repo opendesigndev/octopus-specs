@@ -26,7 +26,7 @@ properties:
       $ref: '../schemas.yaml#/StyleRange'
 
   textTransform:
-    $ref: '../schemas.yaml#/TextTransform'
+    $ref: '../schemas.yaml#/Transform'
 
   frame:
     $ref: '../schemas.yaml#/TextFrame'
@@ -71,5 +71,4 @@ properties:
 required:
   - value
   - defaultStyle
-  - textTransform
   - baselinePolicy
