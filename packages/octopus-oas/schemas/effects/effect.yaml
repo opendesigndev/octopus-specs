@@ -9,7 +9,6 @@ oneOf:
   - $ref: '../schemas.yaml#/EffectInnerGlow'
   - $ref: '../schemas.yaml#/EffectOuterGlow'
   - $ref: '../schemas.yaml#/EffectBlur'
-  - $ref: '../schemas.yaml#/EffectBackgroundBlur'
   - $ref: '../schemas.yaml#/EffectOther'
 
 discriminator:
@@ -22,5 +21,4 @@ discriminator:
     INNER_GLOW: '#/components/schemas/EffectInnerGlow'
     OUTER_GLOW: '#/components/schemas/EffectOuterGlow'
     BLUR: '#/components/schemas/EffectBlur'
-    BACKGROUND_BLUR: '#/components/schemas/EffectBackgroundBlur'
     OTHER: '#/components/schemas/EffectOther'

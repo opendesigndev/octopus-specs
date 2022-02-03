@@ -192,9 +192,6 @@ EffectOuterGlow:
 EffectBlur:
   $ref: ./effects/blur.yaml
 
-EffectBackgroundBlur:
-  $ref: ./effects/background-blur.yaml
-
 EffectOther:
   $ref: ./effects/other.yaml
 
