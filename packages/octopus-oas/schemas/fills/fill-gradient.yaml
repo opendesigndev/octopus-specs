@@ -16,7 +16,7 @@ allOf:
           stops:
             type: array
             items:
-              $ref: './color-stop.yaml'
+              $ref: '../schemas.yaml#/GradientColorStop'
 
         required: [type]
 

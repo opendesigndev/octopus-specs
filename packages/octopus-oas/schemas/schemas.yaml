@@ -129,6 +129,9 @@ FillImage:
 FillPositioning:
   $ref: ./fills/fill-positioning.yaml
 
+GradientColorStop:
+  $ref: ./fills/color-stop.yaml
+
 # Stroke
 
 Stroke:
