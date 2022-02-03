@@ -36,14 +36,7 @@ properties:
     $ref: '../schemas.yaml#/Transform'
 
   meta:
-    type: object
-
-    properties:
-      transform:
-        description:
-          Layer transformation meta information - original values of the transform actions.
-
-        $ref: '../schemas.yaml#/TransformMeta'
+    $ref: '../schemas.yaml#/LayerMeta'
 
   opacity:
     description:

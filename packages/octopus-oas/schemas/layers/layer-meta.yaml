@@ -1,0 +1,23 @@
+description:
+  Generic layer meta information.
+
+type: object
+
+properties:
+  transform:
+    description:
+      Layer transformation meta information - original values of the transform actions.
+
+    $ref: '../schemas.yaml#/TransformMeta'
+
+  isArtboard:
+    description:
+      If true layer serves purpose of an artboard.
+
+    type: boolean
+
+  artboardDimensions:
+    description:
+      If layer acts as an artboard this field describes its dimensions.
+
+    $ref: '../schemas.yaml#/Dimensions'

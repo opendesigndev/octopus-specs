@@ -2,7 +2,7 @@ TODO:
   $ref: ./todo.yaml
 
 OctopusDocument:
-  $ref: ./octopus-document.yaml
+  $ref: '#/Layer'
 
 # Layers
 
@@ -26,6 +26,9 @@ MaskGroupLayer:
 
 GroupLayer:
   $ref: ./layers/group-layer.yaml
+
+LayerMeta:
+  $ref: ./layers/layer-meta.yaml
 
 # Common
 
@@ -220,3 +223,4 @@ TextFrame:
 
 OpenTypeFeature:
   $ref: ./texts/open-type-feature.yaml
+
