@@ -68,6 +68,21 @@ properties:
       - FIXED_OFFSET
       - CENTER
 
+  overflowPolicy:
+    description: |
+      Describes visibility of a text that overflows its "FIXED" frame.
+
+       - `NO_OVERFLOW` - text strictly clipped by the frame
+       - `EXTEND_LINE` - visible text is extended by the last line that at least partially fits the frame
+       - `EXTEND_ALL` - the whole text overflow is visible
+
+    type: string
+    enum:
+      - NO_OVERFLOW
+      - EXTEND_LINE
+      - EXTEND_ALL
+    default: NO_OVERFLOW
+
 required:
   - value
   - defaultStyle

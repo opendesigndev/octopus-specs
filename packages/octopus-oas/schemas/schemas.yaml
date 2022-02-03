@@ -217,4 +217,3 @@ TextFrame:
 
 OpenTypeFeature:
   $ref: ./texts/open-type-feature.yaml
-
