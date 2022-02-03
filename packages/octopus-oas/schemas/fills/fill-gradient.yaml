@@ -18,6 +18,8 @@ allOf:
             items:
               $ref: './color-stop.yaml'
 
+        required: [type]
+
       positioning:
         $ref: '../schemas.yaml#/FillPositioning'
 
