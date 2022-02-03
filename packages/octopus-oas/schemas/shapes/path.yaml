@@ -21,4 +21,16 @@ allOf:
           type: number
           format: float
 
+      meta:
+        type: object
+        properties:
+          sourceShape:
+            type: string
+            enum:
+              - LINE
+              - TRIANGLE
+              - RECTANGLE
+              - POLYGON
+              - ELLIPSE
+
     required: [geometry]
