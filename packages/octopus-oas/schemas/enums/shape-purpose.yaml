@@ -1,4 +1,8 @@
-description: Shape purpose enum.
+description: |
+  Denotes a semantical meaning of the shape within a layer.
+  * `BODY` - the shape represents a fill
+  * `STROKE` - the shape represents a border (outline)
+
 type: string
 enum:
   - BODY
