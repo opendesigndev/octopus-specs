@@ -11,16 +11,11 @@ allOf:
       rectangle:
         $ref: '../schemas.yaml#/Rectangle'
 
-      cornerRadii:
+      cornerRadius:
         description:
-          Optional array of rectangle's corner radii.
-          Corners are in order top-left, top-right, bottom-right, bottom-left.
+          Optional value of rectangle's corner radius.
 
-        type: array
-        items:
-          type: number
-          format: float
-        minItems: 4
-        maxItems: 4
+        type: number
+        format: float
 
     required: [rectangle]
