@@ -76,9 +76,6 @@ EffectBasis:
 Shape:
   $ref: ./shapes/shape.yaml
 
-ShapePurpose:
-  $ref: ./enums/shape-purpose.yaml
-
 FillRule:
   $ref: ./enums/fill-rule.yaml
 

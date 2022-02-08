@@ -4,16 +4,13 @@ description:
 type: object
 
 properties:
-  purpose:
-    $ref: '../schemas.yaml#/ShapePurpose'
-
-  fillRule:
-    $ref: '../schemas.yaml#/FillRule'
-
   path:
     $ref: '../schemas.yaml#/PathLike'
     description:
       Path like object representing the root of a boolean expression tree forming the shape.
+
+  fillRule:
+    $ref: '../schemas.yaml#/FillRule'
 
   fills:
     type: array
@@ -24,7 +21,3 @@ properties:
     type: array
     items:
       $ref: '../schemas.yaml#/VectorStroke'
-
-required:
-  - purpose
-  - path

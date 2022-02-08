@@ -12,10 +12,8 @@ allOf:
         enum:
           - SHAPE
 
-      shapes:
-        description: TODO proper shapes
-        type: array
-        items:
-          $ref: '../schemas.yaml#/Shape'
+      shape:
+        description: Shape geometry and paint data.
+        $ref: '../schemas.yaml#/Shape'
 
     required: [shapes]

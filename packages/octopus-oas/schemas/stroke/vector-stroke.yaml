@@ -66,6 +66,16 @@ allOf:
           Offset of the initial dash.
           [Applies to `DASHED` strokes only].
 
+      path:
+        $ref: '../schemas.yaml#/PathLike'
+        description:
+          If a vector shape of the stroke is provided then `path` represents its geometry data.
+
+      fillRule:
+        $ref: '../schemas.yaml#/FillRule'
+        description:
+          If a vector shape of the stroke is provided then this field sets fill rule of the geometry.
+
     required:
       - style
       - lineJoin
