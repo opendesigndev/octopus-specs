@@ -1,8 +1,5 @@
-TODO:
-  $ref: ./todo.yaml
-
 OctopusDocument:
-  $ref: '#/Layer'
+  $ref: './octopus-document.yaml'
 
 # Layers
 
@@ -223,4 +220,3 @@ TextFrame:
 
 OpenTypeFeature:
   $ref: ./texts/open-type-feature.yaml
-

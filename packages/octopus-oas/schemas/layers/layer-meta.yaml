@@ -12,12 +12,6 @@ properties:
 
   isArtboard:
     description:
-      If true layer serves purpose of an artboard.
+      If true, the layer serves a purpose of an artboard.
 
     type: boolean
-
-  artboardDimensions:
-    description:
-      If layer acts as an artboard this field describes its dimensions.
-
-    $ref: '../schemas.yaml#/Dimensions'
