@@ -8,6 +8,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - XD_BRIGHTNESS_ADJUSTMENT
+
       brightness:
         type: number
         format: float

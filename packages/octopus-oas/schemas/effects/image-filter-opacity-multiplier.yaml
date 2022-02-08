@@ -8,5 +8,10 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - OPACITY_MULTIPLIER
+
       opacity:
         $ref: '../schemas.yaml#/Opacity'

@@ -8,6 +8,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - INNER_GLOW
+
       glow:
         $ref: '../schemas.yaml#/ShadowConfig'
 

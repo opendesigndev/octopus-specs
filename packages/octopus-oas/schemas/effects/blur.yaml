@@ -8,6 +8,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - BLUR
+
       blur:
         type: number
         format: float

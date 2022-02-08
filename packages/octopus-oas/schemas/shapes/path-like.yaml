@@ -1,5 +1,5 @@
 description:
-  A path-like object, can be of type 'PATH' (contains an actual sub-path geometry) or 'COMPOUND' (connecting multiple sub-paths using a boolean operation).
+  A path-like object, can be of type  'COMPOUND' (connecting multiple sub-paths using a boolean operation), 'PATH' (contains an actual sub-path geometry) or 'RECTANGLE' (special case of a path that is being a rectangle).
 
 oneOf:
   - $ref: '../schemas.yaml#/CompoundPath'

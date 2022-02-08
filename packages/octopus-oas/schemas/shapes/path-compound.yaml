@@ -8,6 +8,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - COMPOUND
+
       op:
         $ref: '../schemas.yaml#/BooleanOp'
 

@@ -8,6 +8,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - OVERLAY
+
       overlay:
         $ref: '../schemas.yaml#/Fill'
 

@@ -6,6 +6,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - GROUP
+
       layers:
         type: array
         items:

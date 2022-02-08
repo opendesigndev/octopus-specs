@@ -8,6 +8,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - OTHER
+
       otherEffectProperties:
         type: object
         additionalProperties: true

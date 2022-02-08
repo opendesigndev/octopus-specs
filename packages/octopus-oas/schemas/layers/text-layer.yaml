@@ -6,6 +6,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - TEXT
+
       text:
         $ref: '../schemas.yaml#/Text'
 

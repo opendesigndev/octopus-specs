@@ -6,6 +6,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - COMPONENT_REFERENCE
+
       componentID:
         description:
           Referenced component ID.

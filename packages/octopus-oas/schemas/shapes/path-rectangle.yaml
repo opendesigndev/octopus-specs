@@ -8,6 +8,11 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - RECTANGLE
+
       rectangle:
         $ref: '../schemas.yaml#/Rectangle'
 

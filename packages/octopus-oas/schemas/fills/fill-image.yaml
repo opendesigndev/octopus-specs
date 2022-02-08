@@ -8,6 +8,10 @@ allOf:
 
   - type: object
     properties:
+      type:
+        type: string
+        enum:
+          - IMAGE
 
       image:
         $ref: '../schemas.yaml#/Image'
