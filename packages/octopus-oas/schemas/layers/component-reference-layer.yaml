@@ -18,4 +18,4 @@ allOf:
         $ref: '../schemas.yaml#/ID'
 
 
-    required: [componentID]
+    required: [type, componentID]

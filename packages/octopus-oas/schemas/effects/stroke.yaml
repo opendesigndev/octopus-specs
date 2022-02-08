@@ -16,4 +16,4 @@ allOf:
       stroke:
         $ref: '../schemas.yaml#/Stroke'
 
-    required: [stroke]
+    required: [type, stroke]

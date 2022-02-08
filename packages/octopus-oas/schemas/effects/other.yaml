@@ -16,3 +16,5 @@ allOf:
       otherEffectProperties:
         type: object
         additionalProperties: true
+
+    required: [type, otherEffectProperties]

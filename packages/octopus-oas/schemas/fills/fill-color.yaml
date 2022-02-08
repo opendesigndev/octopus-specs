@@ -16,4 +16,4 @@ allOf:
       color:
         $ref: '../schemas.yaml#/Color'
 
-    required: [color]
+    required: [type, color]

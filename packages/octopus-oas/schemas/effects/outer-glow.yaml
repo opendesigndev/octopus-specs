@@ -16,4 +16,4 @@ allOf:
       glow:
         $ref: '../schemas.yaml#/ShadowConfig'
 
-    required: [glow]
+    required: [type, glow]

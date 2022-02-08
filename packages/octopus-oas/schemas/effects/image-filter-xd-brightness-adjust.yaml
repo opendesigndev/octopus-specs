@@ -16,3 +16,5 @@ allOf:
       brightness:
         type: number
         format: float
+
+    required: [type, brightness]

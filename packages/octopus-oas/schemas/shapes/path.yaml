@@ -38,4 +38,4 @@ allOf:
               - POLYGON
               - ELLIPSE
 
-    required: [geometry]
+    required: [type, geometry]

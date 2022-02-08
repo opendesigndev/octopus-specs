@@ -44,3 +44,5 @@ allOf:
           shadows:
             type: number
             format: float
+
+    required: [type, colorAdjustment]

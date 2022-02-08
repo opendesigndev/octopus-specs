@@ -14,4 +14,4 @@ allOf:
       text:
         $ref: '../schemas.yaml#/Text'
 
-    required: [text]
+    required: [type, text]

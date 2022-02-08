@@ -16,4 +16,4 @@ allOf:
         items:
           $ref: '../schemas.yaml#/Layer'
 
-    required: [layers]
+    required: [type, layers]

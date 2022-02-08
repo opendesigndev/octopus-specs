@@ -28,4 +28,4 @@ allOf:
       positioning:
         $ref: '../schemas.yaml#/FillPositioning'
 
-    required: [gradient, positioning]
+    required: [type, gradient, positioning]

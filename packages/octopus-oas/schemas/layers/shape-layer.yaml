@@ -16,4 +16,4 @@ allOf:
         description: Shape geometry and paint data.
         $ref: '../schemas.yaml#/Shape'
 
-    required: [shapes]
+    required: [type, shapes]

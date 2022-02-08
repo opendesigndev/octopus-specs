@@ -24,4 +24,4 @@ allOf:
         items:
           $ref: '../schemas.yaml#/ImageFilter'
 
-    required: [image, positioning]
+    required: [type, image, positioning]

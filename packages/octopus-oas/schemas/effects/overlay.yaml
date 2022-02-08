@@ -16,4 +16,4 @@ allOf:
       overlay:
         $ref: '../schemas.yaml#/Fill'
 
-    required: [overlay]
+    required: [type, overlay]

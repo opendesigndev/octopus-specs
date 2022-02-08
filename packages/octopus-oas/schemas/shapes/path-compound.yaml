@@ -28,5 +28,6 @@ allOf:
           If present, the `geometry` contains a resolved path after the `op` application.
 
     required:
+      - type
       - op
       - paths

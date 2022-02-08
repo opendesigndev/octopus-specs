@@ -22,4 +22,4 @@ allOf:
         items:
           $ref: '../schemas.yaml#/ImageFilter'
 
-    required: [blur]
+    required: [type, blur]
