@@ -15,6 +15,8 @@ allOf:
 
       op:
         $ref: '../schemas.yaml#/BooleanOp'
+        description:
+          Boolean operations applied to `paths` to make the compound path. If missing `paths` form individual contours of the compound path.
 
       paths:
         type: array
@@ -29,5 +31,4 @@ allOf:
 
     required:
       - type
-      - op
       - paths
