@@ -59,14 +59,16 @@ properties:
       Determines a position of the baseline.
 
        - `SET` - baseline is given precisely by the text transform
-       - `FIXED_OFFSET` - baseline is shifted by a fixed distance based on font properties
        - `CENTER` - baseline is centered within the line (i.e. depends on `lineHeight`)
+       - `OFFSET_ASCENDER` - baseline is shifted by the ascender line height
+       - `OFFSET_BEARING` - baseline is shifted by the largest Y-axis bearing in the first line
 
     type: string
     enum:
       - SET
-      - FIXED_OFFSET
       - CENTER
+      - OFFSET_ASCENDER
+      - OFFSET_BEARING
 
   overflowPolicy:
     description: |
