@@ -22,6 +22,10 @@ case $1 in
         VERSION_ARGS="--major"
         ;;
 
+    --version)
+        VERSION_ARGS="--version $2"
+        ;;
+
     *)
         VERSION_ARGS="--patch"
         ;;
