@@ -23,7 +23,7 @@ case $1 in
         ;;
 
     --version)
-        VERSION_ARGS="--version $2"
+        VERSION_ARGS="--new-version $2"
         ;;
 
     *)
