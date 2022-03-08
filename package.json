@@ -15,6 +15,7 @@
     "-- VERSION --": "",
     "preversion": "yarn build",
     "postversion": "yarn workspaces run version:bump $npm_package_version",
+    "version:bump": "./scripts/bump-versions.sh --version",
     "version:bump:major": "./scripts/bump-versions.sh --major",
     "version:bump:minor": "./scripts/bump-versions.sh --minor",
     "version:bump:patch": "./scripts/bump-versions.sh --patch",
