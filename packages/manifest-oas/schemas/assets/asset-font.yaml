@@ -1,0 +1,13 @@
+type: object
+properties:
+  location:
+    $ref: '../schemas.yaml#/ResourceLocation'
+
+  fontType:
+    type: string
+
+  refId:
+    type: string
+
+  name:
+    type: string

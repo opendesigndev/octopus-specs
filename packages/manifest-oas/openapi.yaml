@@ -1,0 +1,18 @@
+openapi: 3.0.3
+
+info:
+  title: Octopus Manifest OpenAPI specification
+  version: 0.0.1
+paths:
+  /:
+    get:
+      responses:
+        "200":
+          description: Octopus Manifest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OctopusManifest'
+components:
+  schemas:
+    $ref: 'schemas/schemas.yaml'

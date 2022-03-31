@@ -1,0 +1,15 @@
+description: ID used to reference components
+type: object
+
+properties:
+  id:
+    type: string
+
+  type:
+    type: string
+    enum:
+      - COMPONENT
+
+required:
+  - id
+  - type

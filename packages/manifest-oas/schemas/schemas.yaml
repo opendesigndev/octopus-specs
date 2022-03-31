@@ -1,0 +1,85 @@
+OctopusManifest:
+  $ref: ./octopus-manifest.yaml
+
+Origin:
+  $ref: ./origin.yaml
+
+Page:
+  $ref: ./page.yaml
+
+Bounds:
+  $ref: ./bounds.yaml
+
+Artboard:
+  $ref: ./artboard.yaml
+
+Library:
+  $ref: ./library.yaml
+
+Component:
+  $ref: ./component.yaml
+
+Chunk:
+  $ref: ./chunk.yaml
+
+ComponentSet:
+  $ref: ./component-set.yaml
+
+VariantMeta:
+  $ref: ./variant-meta.yaml
+
+# IDs
+ArtboardID:
+  $ref: ./ids/id-artboard.yaml
+
+ComponentID:
+  $ref: ./ids/id-component.yaml
+
+ChunkID:
+  $ref: ./ids/id-chunk.yaml
+
+# Sets of IDs
+EntityID:
+  $ref: ./ids/id-set-entity.yaml
+
+DocumentID:
+  $ref: ./ids/id-set-document.yaml
+
+DependencyID:
+  $ref: ./ids/id-set-dependency.yaml
+
+# Resource references
+ResourceLocation:
+  $ref: ./res/res-location.yaml
+
+ResourceLocationLocal:
+  $ref: ./res/res-local.yaml
+
+ResourceLocationRemote:
+  $ref: ./res/res-remote.yaml
+
+ResourceLocationRemoteURL:
+  $ref: ./res/res-local.yaml
+
+# Assets
+Assets:
+  $ref: ./assets/assets.yaml
+
+AssetFont:
+  $ref: ./assets/asset-font.yaml
+
+AssetImage:
+  $ref: ./assets/asset-image.yaml
+
+# Other
+Artifact:
+  $ref: ./artifact.yaml
+
+# Layer:
+#   $ref: ./layers/layer.yaml
+#
+# LayerBase:
+#   $ref: ./layers/layer-base.yaml
+#
+# ShapeLayer:
+#   $ref: ./layers/shape-layer.yaml

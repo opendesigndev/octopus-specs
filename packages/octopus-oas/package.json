@@ -5,7 +5,7 @@
     "dist/openapi.json"
   ],
   "scripts": {
-    "build": "./scripts/assemble.sh",
+    "build": "../../scripts/assemble.sh",
     "release": "yarn publish --non-interactive",
     "version:bump": "yarn version --no-git-tag-version --new-version"
   },

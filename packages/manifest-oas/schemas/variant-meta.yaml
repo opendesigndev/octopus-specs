@@ -1,0 +1,18 @@
+description: If component is variant of other component this describes that relation. Otherwise missing.
+type: object
+
+properties:
+  of:
+    $ref: './schemas.yaml#/ComponentSet'
+
+  properties:
+    type: object
+    additionalProperties:
+      type: string
+
+  description:
+    type: string
+
+required:
+  - of
+  - properties

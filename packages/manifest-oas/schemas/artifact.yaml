@@ -1,0 +1,17 @@
+description: Artifact is a descriptor of processed source. Each source file can be processed multiple ways, for example source can be processed into pure octopus and expanded octopus.
+
+type: object
+
+properties:
+  type:
+    type: string
+    enum:
+      - OCTOPUS
+      - OCTOPUS_EXPANDED
+
+  location:
+    $ref: './schemas.yaml#/ResourceLocation'
+
+required:
+  - type
+  - location

@@ -1,0 +1,12 @@
+description: ID used to reference document's dependency (i.e component or chunk)
+type: object
+
+oneOf:
+  - $ref: '../schemas.yaml#/ComponentID'
+  - $ref: '../schemas.yaml#/ChunkID'
+
+discriminator:
+  propertyName: type
+  mapping:
+    COMPONENT: '#/components/schemas/ComponentID'
+    CHUNK: '#/components/schemas/ChunkID'

@@ -6,7 +6,7 @@
     "index.ts"
   ],
   "scripts": {
-    "build": "./scripts/generate-ts.sh",
+    "build": "../../scripts/generate-ts.sh octopus",
     "release": "yarn publish --non-interactive",
     "version:bump": "yarn version --no-git-tag-version --new-version"
   },

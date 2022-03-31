@@ -1,0 +1,13 @@
+description: Reference to data store elsewhere
+
+oneOf:
+  - $ref: '../schemas.yaml#/ResourceLocationLocal'
+  - $ref: '../schemas.yaml#/ResourceLocationRemote'
+  - $ref: '../schemas.yaml#/ResourceLocationRemoteURL'
+
+discriminator:
+  propertyName: type
+  mapping:
+    LOCAL_RESOURCE: '#/components/schemas/ResourceLocationLocal'
+    REMOTE_RESOURCE: '#/components/schemas/ResourceLocationRemote'
+    REMOTE_RESOURCE_URL: '#/components/schemas/ResourceLocationRemoteURL'

@@ -5,6 +5,8 @@
   "workspaces": [
     "packages/octopus-oas",
     "packages/octopus-ts",
+    "packages/manifest-oas",
+    "packages/manifest-ts",
     "packages/specs-renderer"
   ],
   "files": [],

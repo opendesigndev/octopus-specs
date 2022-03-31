@@ -1,11 +1,19 @@
 {
-  "name": "@opendesign/manifest-ts",
-  "version": "3.0.0-alpha.1",
+  "name": "@avocode/manifest-ts",
+  "version": "3.0.0-alpha.23",
   "files": [
-    "dist/openapi.json"
+    "dist/manifest.ts",
+    "index.ts"
   ],
-  "scripts": {},
+  "scripts": {
+    "build": "../../scripts/generate-ts.sh manifest",
+    "release": "yarn publish --non-interactive",
+    "version:bump": "yarn version --no-git-tag-version --new-version"
+  },
+  "dependencies": {},
   "devDependencies": {
-    "@apidevtools/swagger-cli": "4.0.4"
+    "@avocode/manifest-oas": "^3.0.0-alpha.1",
+    "openapi-typescript": "^4.4.0",
+    "prettier": "^2.4.1"
   }
 }
