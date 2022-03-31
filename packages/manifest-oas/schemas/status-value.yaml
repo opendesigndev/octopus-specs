@@ -1,0 +1,10 @@
+description:
+  Processing state of an entity.
+
+type: string
+
+enum:
+  - PENDING
+  - PROCESSING
+  - READY
+  - FAILED

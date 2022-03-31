@@ -75,11 +75,12 @@ AssetImage:
 Artifact:
   $ref: ./artifact.yaml
 
-# Layer:
-#   $ref: ./layers/layer.yaml
-#
-# LayerBase:
-#   $ref: ./layers/layer-base.yaml
-#
-# ShapeLayer:
-#   $ref: ./layers/shape-layer.yaml
+# Status
+StatusValue:
+  $ref: ./status-value.yaml
+
+Error:
+  $ref: ./error.yaml
+
+Status:
+  $ref: ./status.yaml
