@@ -1,0 +1,12 @@
+description:
+  Meta information of the layer origin.
+
+oneOf:
+  - $ref: '../schemas.yaml#/MetaOriginAdjustment'
+  - $ref: '../schemas.yaml#/MetaOriginSmartObject'
+
+discriminator:
+  propertyName: type
+  mapping:
+    PHOTOSHOP_ADJUSTMENT_LAYER: '#/components/schemas/MetaOriginAdjustment'
+    PHOTOSHOP_SMART_OBJECT: '#/components/schemas/MetaOriginSmartObject'
