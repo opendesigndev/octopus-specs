@@ -44,6 +44,10 @@ properties:
 
   hash:
     type: string
+
+  status:
+    $ref: './schemas.yaml#/Status'
+
 required:
   - id
   - globalId
