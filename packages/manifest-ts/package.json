@@ -1,6 +1,6 @@
 {
   "name": "@avocode/manifest-ts",
-  "version": "3.0.0-alpha.24",
+  "version": "3.0.0-alpha.25",
   "files": [
     "dist/manifest.ts",
     "index.ts"
