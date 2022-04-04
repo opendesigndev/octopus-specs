@@ -6,7 +6,6 @@ properties:
   type:
     type: string
     enum:
-      - OCTOPUS
       - OCTOPUS_EXPANDED
 
   location:
