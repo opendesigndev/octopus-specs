@@ -1,3 +1,5 @@
+description: Reference to previous version resource
+
 type: object
 
 properties:
@@ -8,6 +10,10 @@ properties:
   path:
     type: string
 
+  versionHash:
+    type: string
+
 required:
   - type
   - path
+  - versionHash

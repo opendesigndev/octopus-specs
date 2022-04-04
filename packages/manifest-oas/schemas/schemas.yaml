@@ -59,7 +59,10 @@ ResourceLocationRemote:
   $ref: ./res/res-remote.yaml
 
 ResourceLocationRemoteURL:
-  $ref: ./res/res-local.yaml
+  $ref: ./res/res-remote-url.yaml
+
+ResourceLocationTransient:
+  $ref: ./res/res-transient.yaml
 
 # Assets
 Assets:

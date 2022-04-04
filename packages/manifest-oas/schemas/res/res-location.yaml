@@ -4,6 +4,7 @@ oneOf:
   - $ref: '../schemas.yaml#/ResourceLocationLocal'
   - $ref: '../schemas.yaml#/ResourceLocationRemote'
   - $ref: '../schemas.yaml#/ResourceLocationRemoteURL'
+  - $ref: '../schemas.yaml#/ResourceLocationTransient'
 
 discriminator:
   propertyName: type
@@ -11,3 +12,4 @@ discriminator:
     LOCAL_RESOURCE: '#/components/schemas/ResourceLocationLocal'
     REMOTE_RESOURCE: '#/components/schemas/ResourceLocationRemote'
     REMOTE_RESOURCE_URL: '#/components/schemas/ResourceLocationRemoteURL'
+    TRANSIENT: '#/components/schemas/ResourceLocationTransient'
