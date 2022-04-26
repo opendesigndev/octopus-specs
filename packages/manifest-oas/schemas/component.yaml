@@ -48,6 +48,9 @@ properties:
   status:
     $ref: './schemas.yaml#/Status'
 
+  isArtboard:
+    type: boolean
+
 required:
   - id
   - globalId

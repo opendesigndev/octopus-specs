@@ -6,13 +6,13 @@ properties:
     type: number
   y:
     type: number
-  w:
+  width:
     type: number
-  h:
+  height:
     type: number
 
 required:
   - x
   - y
-  - w
-  - h
+  - width
+  - height

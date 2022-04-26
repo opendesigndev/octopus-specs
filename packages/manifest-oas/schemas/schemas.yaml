@@ -52,17 +52,11 @@ DependencyID:
 ResourceLocation:
   $ref: ./res/res-location.yaml
 
-ResourceLocationLocal:
-  $ref: ./res/res-local.yaml
+ResourceLocationRelative:
+  $ref: ./res/res-relative.yaml
 
-ResourceLocationRemote:
-  $ref: ./res/res-remote.yaml
-
-ResourceLocationRemoteURL:
-  $ref: ./res/res-remote-url.yaml
-
-ResourceLocationTransient:
-  $ref: ./res/res-transient.yaml
+ResourceLocationExternal:
+  $ref: ./res/res-external.yaml
 
 # Assets
 Assets:
