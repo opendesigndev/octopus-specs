@@ -10,9 +10,6 @@ Page:
 Bounds:
   $ref: ./bounds.yaml
 
-Artboard:
-  $ref: ./artboard.yaml
-
 Library:
   $ref: ./library.yaml
 
@@ -28,24 +25,17 @@ ComponentSet:
 VariantMeta:
   $ref: ./variant-meta.yaml
 
-# IDs
-ArtboardID:
-  $ref: ./ids/id-artboard.yaml
-
-ComponentID:
+ComponentId:
   $ref: ./ids/id-component.yaml
 
-ChunkID:
+ChunkId:
   $ref: ./ids/id-chunk.yaml
 
-# Sets of IDs
-EntityID:
+# Sets of Ids
+EntityId:
   $ref: ./ids/id-set-entity.yaml
 
-DocumentID:
-  $ref: ./ids/id-set-document.yaml
-
-DependencyID:
+DependencyId:
   $ref: ./ids/id-set-dependency.yaml
 
 # Resource references
@@ -81,3 +71,6 @@ Error:
 
 Status:
   $ref: ./status.yaml
+
+ComponentMeta:
+  $ref: ./component-meta.yaml

@@ -1,4 +1,4 @@
-description: ID used to reference chunks
+description: Id used to reference chunks
 type: object
 
 properties:
