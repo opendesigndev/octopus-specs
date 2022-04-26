@@ -1,0 +1,14 @@
+description: ID used to reference arbitrary Manifest entity
+type: object
+
+oneOf:
+  - $ref: '../schemas.yaml#/ArtboardID'
+  - $ref: '../schemas.yaml#/ComponentID'
+  - $ref: '../schemas.yaml#/ChunkID'
+
+discriminator:
+  propertyName: type
+  mapping:
+    ARTBOARD: '#/components/schemas/ArtboardID'
+    COMPONENT: '#/components/schemas/ComponentID'
+    CHUNK: '#/components/schemas/ChunkID'

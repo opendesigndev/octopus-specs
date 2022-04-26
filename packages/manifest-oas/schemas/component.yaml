@@ -1,0 +1,57 @@
+description: Component descriptor.
+type: object
+
+properties:
+  id:
+    type: string
+
+  globalId:
+    type: string
+
+  name:
+    type: string
+
+  bounds:
+    $ref: './schemas.yaml#/Bounds'
+
+  dependencies:
+    type: array
+    items:
+      $ref: './schemas.yaml#/DependencyID'
+
+  location:
+    $ref: './schemas.yaml#/ResourceLocation'
+
+  artifacts:
+    type: array
+    items:
+      $ref: './schemas.yaml#/Artifact'
+
+  parentId:
+    $ref: './schemas.yaml#/DocumentID'
+
+  preview:
+    $ref: './schemas.yaml#/ResourceLocation'
+
+  assets:
+    $ref: './schemas.yaml#/Assets'
+
+  variant:
+    $ref: './schemas.yaml#/VariantMeta'
+
+  description:
+    type: string
+
+  hash:
+    type: string
+
+  status:
+    $ref: './schemas.yaml#/Status'
+
+required:
+  - id
+  - globalId
+  - name
+  - bounds
+  - dependencies
+  - location

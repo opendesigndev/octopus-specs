@@ -1,0 +1,12 @@
+description:
+  Meta information denoting that a layer originally comes from Photoshop Smart Object
+
+type: object
+
+properties:
+  type:
+    type: string
+    enum:
+      - PHOTOSHOP_SMART_OBJECT
+
+required: [type]

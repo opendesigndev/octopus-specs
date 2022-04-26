@@ -1,0 +1,19 @@
+description: Reference to previous version resource
+
+type: object
+
+properties:
+  type:
+    type: string
+    enum:
+      - REMOTE_RESOURCE
+  path:
+    type: string
+
+  versionHash:
+    type: string
+
+required:
+  - type
+  - path
+  - versionHash

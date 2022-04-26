@@ -1,0 +1,19 @@
+description:
+  Meta information denoting a layer originally being a Photoshop adjustment layer.
+
+type: object
+
+properties:
+  type:
+    type: string
+    enum:
+      - PHOTOSHOP_ADJUSTMENT_LAYER
+
+  adjustmentType:
+    type: string
+    enum:
+      - SOLID_COLOR
+      - GRADIENT
+      - PATTERN
+
+required: [type]

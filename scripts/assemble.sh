@@ -1,9 +1,13 @@
 #!/bin/sh
 
-PROJ_ROOT=`dirname ${0}`/..
+OAS_SOURCE=${PWD}/openapi.yaml
+echo "OAS_SOURCE: ${OAS_SOURCE}"
 
-DIST_DIR=${PROJ_ROOT}/dist
+[[ -f ${OAS_SOURCE} ]] || exit 1;
 
+DIST_DIR=${PWD}/dist
 mkdir -p ${DIST_DIR}
 
-${PROJ_ROOT}/node_modules/.bin/swagger-cli bundle -o ${DIST_DIR}/openapi.json -t json ${PROJ_ROOT}/octopus-oas/openapi.yaml
+PROJECT_ROOT=`dirname ${0}`/..
+echo "PROJECT_ROOT: ${PROJECT_ROOT}"
+${PROJECT_ROOT}/node_modules/.bin/swagger-cli bundle -o ${DIST_DIR}/openapi.json -t json ${OAS_SOURCE}

@@ -27,6 +27,16 @@ GroupLayer:
 LayerMeta:
   $ref: ./layers/layer-meta.yaml
 
+MetaOrigin:
+  $ref: ./layers/meta-origin.yaml
+
+MetaOriginSmartObject:
+  $ref: ./layers/meta-origin-smart-object.yaml
+
+MetaOriginAdjustment:
+  $ref: ./layers/meta-origin-adjustment.yaml
+
+
 # Common
 
 ID:

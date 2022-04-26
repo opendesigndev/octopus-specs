@@ -15,3 +15,6 @@ properties:
       If true, the layer serves a purpose of an artboard.
 
     type: boolean
+
+  origin:
+    $ref: '../schemas.yaml#/MetaOrigin'

@@ -1,0 +1,25 @@
+description: Page descriptor. Can contain only artboards or components.
+type: object
+
+properties:
+  id:
+    type: string
+
+  name:
+    type: string
+
+  children:
+    type: array
+    items:
+      $ref: './schemas.yaml#/EntityID'
+
+  description:
+    type: string
+
+  hash:
+    type: string
+
+required:
+  - id
+  - name
+  - children

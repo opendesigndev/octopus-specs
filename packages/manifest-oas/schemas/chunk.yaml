@@ -1,0 +1,52 @@
+description: |-
+  Chunk descriptor. Layer chunk (or "patch") is partial representation of layer. Could be used to describe:
+  - overrides
+  - layer styles
+  - design tokens
+
+type: object
+
+properties:
+  id:
+    type: string
+
+  name:
+    type: string
+
+  type:
+    type: string
+    enum:
+      - STYLE_LAYER
+      - STYLE_FILL
+      - STYLE_TEXT
+      - STYLE_EFFECT
+      - STYLE_GRID
+
+  location:
+    $ref: './schemas.yaml#/ResourceLocation'
+
+  artifacts:
+    type: array
+    items:
+      $ref: './schemas.yaml#/Artifact'
+
+  preview:
+    $ref: './schemas.yaml#/ResourceLocation'
+
+  assets:
+    $ref: './schemas.yaml#/Assets'
+
+  description:
+    type: string
+
+  hash:
+    type: string
+
+  status:
+    $ref: './schemas.yaml#/Status'
+
+required:
+  - id
+  - name
+  - type
+  - location

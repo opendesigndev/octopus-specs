@@ -1,7 +1,15 @@
 {
-  "name": "@opendesign/manifest-oas",
-  "version": "3.0.0-alpha.1",
-  "files": [],
-  "scripts": {},
-  "devDependencies": {}
+  "name": "@avocode/manifest-oas",
+  "version": "3.0.0-alpha.26",
+  "files": [
+    "dist/openapi.json"
+  ],
+  "scripts": {
+    "build": "../../scripts/assemble.sh",
+    "release": "yarn publish --non-interactive",
+    "version:bump": "yarn version --no-git-tag-version --new-version"
+  },
+  "devDependencies": {
+    "@apidevtools/swagger-cli": "4.0.4"
+  }
 }

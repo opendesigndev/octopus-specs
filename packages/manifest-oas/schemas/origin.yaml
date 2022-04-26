@@ -1,0 +1,20 @@
+description: Where design file comes from
+type: object
+
+properties:
+  name:
+    type: string
+    enum:
+      - SKETCH
+      - XD
+      - PHOTOSHOP
+      - ILLUSTRATOR
+      - FIGMA
+
+  version:
+    description: formats of versions of different tools are different
+    type: string
+
+required:
+  - name
+  - version

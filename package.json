@@ -1,10 +1,12 @@
 {
   "name": "@opendesign/octopus-specs",
-  "version": "3.0.0-alpha.23",
+  "version": "3.0.0-alpha.26",
   "private": true,
   "workspaces": [
     "packages/octopus-oas",
     "packages/octopus-ts",
+    "packages/manifest-oas",
+    "packages/manifest-ts",
     "packages/specs-renderer"
   ],
   "files": [],

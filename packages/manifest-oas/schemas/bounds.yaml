@@ -1,0 +1,18 @@
+description: Represents object bounding box. Contains position and size.
+type: object
+
+properties:
+  x:
+    type: number
+  y:
+    type: number
+  w:
+    type: number
+  h:
+    type: number
+
+required:
+  - x
+  - y
+  - w
+  - h

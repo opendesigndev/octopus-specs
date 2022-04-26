@@ -1,0 +1,13 @@
+description: Contains list of fonts and images directly used in artboard/component/chunk
+type: object
+
+properties:
+  fonts:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/AssetFont'
+
+  images:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/AssetImage'

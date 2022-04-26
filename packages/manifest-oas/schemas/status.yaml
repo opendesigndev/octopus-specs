@@ -1,0 +1,18 @@
+description:
+  Processing status
+
+type: object
+
+properties:
+  value:
+    $ref: './schemas.yaml#/StatusValue'
+
+  error:
+    $ref: './schemas.yaml#/Error'
+
+  time:
+    description: Processing duration
+    type: number
+
+required:
+  - value

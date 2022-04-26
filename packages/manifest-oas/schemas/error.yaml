@@ -1,0 +1,15 @@
+description: Error object
+
+type: object
+
+properties:
+  code:
+    type: number
+
+  message:
+    type: string
+
+  stacktrace:
+    type: array
+    items:
+      type: string

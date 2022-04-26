@@ -1,0 +1,55 @@
+description: Octopus Manifest
+type: object
+
+properties:
+  version:
+    type: string
+
+  origin:
+    $ref: './schemas.yaml#/Origin'
+
+  name:
+    type: string
+
+  pages:
+    type: array
+    items:
+      $ref: './schemas.yaml#/Page'
+
+  components:
+    type: array
+    items:
+      $ref: './schemas.yaml#/Component'
+
+  artboards:
+    type: array
+    items:
+      $ref: './schemas.yaml#/Artboard'
+
+  libraries:
+    type: array
+    items:
+      $ref: './schemas.yaml#/Library'
+
+  chunks:
+    type: array
+    items:
+      $ref: './schemas.yaml#/Chunk'
+
+  resourcesBase:
+    type: string
+
+  interactions:
+    $ref: './schemas.yaml#/ResourceLocation'
+
+  hash:
+    type: string
+
+required:
+  - version
+  - origin
+  - pages
+  - components
+  - artboards
+  - libraries
+  - chunks

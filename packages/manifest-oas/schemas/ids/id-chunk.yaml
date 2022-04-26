@@ -1,0 +1,15 @@
+description: ID used to reference chunks
+type: object
+
+properties:
+  id:
+    type: string
+
+  type:
+    type: string
+    enum:
+      - CHUNK
+
+required:
+  - id
+  - type

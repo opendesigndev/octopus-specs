@@ -1,0 +1,16 @@
+description: Meta descriptor of component set. You can use it to distinguish what components come from what set.
+type: object
+
+properties:
+  id:
+    type: string
+
+  name:
+    type: string
+
+  description:
+    type: string
+
+required:
+  - id
+  - name

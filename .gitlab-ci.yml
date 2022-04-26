@@ -25,6 +25,8 @@ build:
     paths:
       - packages/octopus-oas/dist/openapi.json
       - packages/octopus-ts/dist
+      - packages/manifest-oas/dist/openapi.json
+      - packages/manifest-ts/dist
       - packages/specs-renderer/dist
 
 
