@@ -1,6 +1,6 @@
 {
   "name": "@avocode/manifest-oas",
-  "version": "3.0.0-alpha.28",
+  "version": "3.0.0-alpha.29",
   "files": [
     "dist/openapi.json"
   ],

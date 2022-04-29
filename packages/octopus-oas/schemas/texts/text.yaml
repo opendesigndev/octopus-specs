@@ -75,6 +75,7 @@ properties:
       Describes visibility of a text that overflows its "FIXED" frame.
 
        - `NO_OVERFLOW` - text strictly clipped by the frame
+       - `CLIP_LINE` - the last line which doesn't fit the frame is entirely clipped
        - `EXTEND_LINE` - visible text is extended by the last line that at least partially fits the frame
        - `EXTEND_ALL` - the whole text overflow is visible
 
