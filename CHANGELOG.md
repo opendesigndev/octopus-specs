@@ -1,3 +1,7 @@
+## 3.0.0-alpha.29 (2022-04-29)
+
+- octopus: added `CLIP_LINE` text overflow
+
 ## 3.0.0-alpha.28 (2022-04-26)
 
 - manifest: changed `ID` to `Id` everywhere
