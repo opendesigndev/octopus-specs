@@ -21,11 +21,6 @@ properties:
     items:
       $ref: './schemas.yaml#/Component'
 
-  artboards:
-    type: array
-    items:
-      $ref: './schemas.yaml#/Artboard'
-
   libraries:
     type: array
     items:
@@ -50,6 +45,5 @@ required:
   - origin
   - pages
   - components
-  - artboards
   - libraries
   - chunks

@@ -1,4 +1,4 @@
-description: ID used to reference components
+description: Id used to reference components
 type: object
 
 properties:

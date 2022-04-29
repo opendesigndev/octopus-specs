@@ -1,0 +1,6 @@
+description: Component meta information
+type: object
+
+properties:
+  globalId:
+    type: string

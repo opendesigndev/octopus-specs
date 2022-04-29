@@ -5,8 +5,8 @@ properties:
   id:
     type: string
 
-  globalId:
-    type: string
+  meta:
+    $ref: ./schemas.yaml#/ComponentMeta
 
   name:
     type: string
@@ -17,7 +17,7 @@ properties:
   dependencies:
     type: array
     items:
-      $ref: './schemas.yaml#/DependencyID'
+      $ref: './schemas.yaml#/DependencyId'
 
   location:
     $ref: './schemas.yaml#/ResourceLocation'
@@ -28,7 +28,7 @@ properties:
       $ref: './schemas.yaml#/Artifact'
 
   parentId:
-    $ref: './schemas.yaml#/DocumentID'
+    $ref: './schemas.yaml#/ComponentId'
 
   preview:
     $ref: './schemas.yaml#/ResourceLocation'
@@ -48,9 +48,14 @@ properties:
   status:
     $ref: './schemas.yaml#/Status'
 
+  isArtboard:
+    type: boolean
+
+  isPasteboard:
+    type: boolean
+
 required:
   - id
-  - globalId
   - name
   - bounds
   - dependencies

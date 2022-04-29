@@ -11,7 +11,7 @@ properties:
   children:
     type: array
     items:
-      $ref: './schemas.yaml#/EntityID'
+      $ref: './schemas.yaml#/EntityId'
 
   description:
     type: string

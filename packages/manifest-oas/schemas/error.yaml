@@ -4,7 +4,7 @@ type: object
 
 properties:
   code:
-    type: number
+    type: integer
 
   message:
     type: string

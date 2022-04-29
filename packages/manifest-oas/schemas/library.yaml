@@ -11,7 +11,7 @@ properties:
   children:
     type: array
     items:
-      $ref: './schemas.yaml#/DependencyID'
+      $ref: './schemas.yaml#/DependencyId'
 
   location:
     $ref: './schemas.yaml#/ResourceLocation'
