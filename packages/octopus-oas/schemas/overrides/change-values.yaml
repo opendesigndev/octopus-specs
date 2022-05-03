@@ -1,0 +1,81 @@
+description: Object describing concrete values to change on with given subject
+
+type: object
+
+properties:
+  fill:
+    $ref: '../schemas.yaml#/Fill'
+
+  stroke:
+    $ref: '../schemas.yaml#/VectorStroke'
+
+  effect:
+    $ref: '../schemas.yaml#/Effect'
+
+  filter:
+    $ref: '../schemas.yaml#/ImageFilter'
+
+  visible:
+    $ref: '../schemas.yaml#/Visible'
+
+  blendMode:
+    $ref: '../schemas.yaml#/BlendMode'
+
+  transform:
+    $ref: '../schemas.yaml#/Transform'
+
+  name:
+    $ref: '../schemas.yaml#/Name'
+
+  opacity:
+    $ref: '../schemas.yaml#/Opacity'
+
+  featureScale:
+    $ref: '../schemas.yaml#/FeatureScale'
+
+  shape:
+    $ref: '../schemas.yaml#/Shape'
+
+  text:
+    $ref: '../schemas.yaml#/Text'
+
+  maskBasis:
+    $ref: '../schemas.yaml#/MaskBasis'
+
+  componentId:
+    $ref: '../schemas.yaml#/Id'
+
+  effects:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/Effect'
+
+  fills:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/Fill'
+
+  strokes:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/VectorStroke'
+
+  fillRule:
+    $ref: '../schemas.yaml#/FillRule'
+
+  path:
+    $ref: '../schemas.yaml#/PathLike'
+
+  value:
+    $ref: '../schemas.yaml#/TextValue'
+
+  defaultStyle:
+    $ref: '../schemas.yaml#/TextStyle'
+
+  styles:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/TextStyle'
+
+  basis:
+    $ref: '../schemas.yaml#/EffectBasis'

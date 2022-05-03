@@ -36,10 +36,23 @@ MetaOriginSmartObject:
 MetaOriginAdjustment:
   $ref: ./layers/meta-origin-adjustment.yaml
 
+FeatureScale:
+  $ref: ./layers/feature-scale.yaml
+
+# Overrides
+
+Override:
+  $ref: ./overrides/override.yaml
+
+Change:
+  $ref: ./overrides/change.yaml
+
+ChangeValues:
+  $ref: ./overrides/change-values.yaml
 
 # Common
 
-ID:
+Id:
   $ref: ./common/id.yaml
 
 Dimensions:
@@ -62,6 +75,12 @@ TransformMeta:
 
 Opacity:
   $ref: ./common/opacity.yaml
+
+Name:
+  $ref: ./common/name.yaml
+
+Visible:
+  $ref: ./common/visible.yaml
 
 BlendMode:
   $ref: ./enums/blend-mode.yaml
@@ -227,3 +246,6 @@ TextFrame:
 
 OpenTypeFeature:
   $ref: ./texts/open-type-feature.yaml
+
+TextValue:
+  $ref: ./texts/value.yaml
