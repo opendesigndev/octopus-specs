@@ -1,6 +1,6 @@
 {
   "name": "@avocode/octopus-ts",
-  "version": "3.0.0-alpha.29",
+  "version": "3.0.0-alpha.30",
   "files": [
     "dist/octopus.ts",
     "index.ts"
