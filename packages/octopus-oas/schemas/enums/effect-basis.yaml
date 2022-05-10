@@ -2,7 +2,7 @@ description: Effect bases enum.
 type: string
 enum:
   - BODY
-  - BODY_PLUS_STROKES
+  - BODY_AND_STROKES
   - FILL
   - LAYER_AND_EFFECTS
   - BACKGROUND

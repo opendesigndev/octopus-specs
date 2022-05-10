@@ -1,3 +1,12 @@
+## 3.0.0-alpha.33 (2022-05-10)
+
+- octopus: added `maskChannels` optional property on MASK_GROUP with RGBAMatrix (5x1) type
+- octopus: added `filterIndex` to `Change`
+- octopus: renamed `textTransform` to `transform` on `Text` descriptors
+- octopus: renamed effect basis `BODY_PLUS_STROKES` to `BODY_AND_STROKES`
+- octopus: changed mask basis enum
+- octopus: removed `BRIGHTNESS_TO_ALPHA` and `INVERSE_BRIGHTNESS_TO_ALPHA` blend modes
+
 ## 3.0.0-alpha.32 (2022-05-03)
 
 ## 3.0.0-alpha.31 (2022-05-03)
