@@ -1,3 +1,16 @@
+## 3.0.0-alpha.32 (2022-05-03)
+
+## 3.0.0-alpha.31 (2022-05-03)
+
+## 3.0.0-alpha.30 (2022-05-03)
+
+- manifest: removed `isPasteboard` and `isArtboard` keys
+- manifest: added `role` property on Component descriptor
+- manifest: Component's `bounds` are optional now
+
+- octopus: changed `ID` to `Id` everywhere
+- octopus: added `overrides` on `ComponentReference` layer
+
 ## 3.0.0-alpha.29 (2022-04-29)
 
 - octopus: added `CLIP_LINE` text overflow

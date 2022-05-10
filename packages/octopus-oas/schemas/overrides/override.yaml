@@ -1,0 +1,20 @@
+description: Describes changes on given path
+
+type: object
+
+properties:
+  target:
+    description: Path to the target layer described as array of layer ids.
+
+    type: array
+    items:
+      $ref: '../schemas.yaml#/Id'
+
+  changes:
+    description: Array of change descriptors
+
+    type: array
+    items:
+      $ref: '../schemas.yaml#/Change'
+
+required: [target, changes]

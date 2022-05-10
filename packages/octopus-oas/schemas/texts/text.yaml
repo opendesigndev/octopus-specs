@@ -1,25 +1,20 @@
-description:
-  Text descriptor.
+description: Text descriptor.
 
 type: object
 properties:
   value:
-    description:
-      Text content of the text layer.
-
-    type: string
+    description: Text content of the text layer.
+    $ref: '../schemas.yaml#/TextValue'
 
   defaultStyle:
-    description:
-      Text style that is used as a default when no explicit style range
+    description: Text style that is used as a default when no explicit style range
       covers the particular fragment of a text. Every font style range in
       `styles` array overrides the `defaultStyle` value.
 
     $ref: '../schemas.yaml#/TextStyle'
 
   styles:
-    description:
-      An array containing styles applied to particular ranges of the text.
+    description: An array containing styles applied to particular ranges of the text.
 
     type: array
     items:
@@ -32,8 +27,7 @@ properties:
     $ref: '../schemas.yaml#/TextFrame'
 
   horizontalAlign:
-    description:
-      Horizontal alignment of the text.
+    description: Horizontal alignment of the text.
 
     type: string
     enum:
@@ -44,8 +38,7 @@ properties:
     default: LEFT
 
   verticalAlign:
-    description:
-      Text vertical alignment relative to the whole layer.
+    description: Text vertical alignment relative to the whole layer.
 
     type: string
     enum:

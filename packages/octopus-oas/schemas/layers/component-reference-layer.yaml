@@ -1,5 +1,4 @@
-description:
-  A layer representing an instantiated component.
+description: A layer representing an instantiated component.
 
 allOf:
   - $ref: '../schemas.yaml#/LayerBase'
@@ -11,11 +10,16 @@ allOf:
         enum:
           - COMPONENT_REFERENCE
 
-      componentID:
-        description:
-          Referenced component ID.
+      componentId:
+        description: Referenced component Id.
 
-        $ref: '../schemas.yaml#/ID'
+        $ref: '../schemas.yaml#/Id'
 
+      overrides:
+        description: Array of overrides - targeted changes on layers
+        type: array
 
-    required: [type, componentID]
+        items:
+          $ref: '../schemas.yaml#/Override'
+
+    required: [type, componentId]

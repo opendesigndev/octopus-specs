@@ -48,15 +48,16 @@ properties:
   status:
     $ref: './schemas.yaml#/Status'
 
-  isArtboard:
-    type: boolean
-
-  isPasteboard:
-    type: boolean
+  role:
+    type: string
+    enum:
+      - ARTBOARD
+      - COMPONENT
+      - PASTEBOARD
+    default: COMPONENT
 
 required:
   - id
   - name
-  - bounds
   - dependencies
   - location

@@ -1,0 +1,5 @@
+description: Feature scale resizes various entities (features) in a layer. See the documentation to understand how are particular layer types affected.
+type: number
+format: float
+minimum: 0
+default: 1

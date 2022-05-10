@@ -1,0 +1,43 @@
+description: Describes layer change
+
+type: object
+
+properties:
+  subject:
+    description: Subject of the change
+
+    type: string
+    enum:
+      - LAYER
+      - SHAPE
+      - TEXT
+      - FILL
+      - STROKE
+      - STROKE_FILL
+      - EFFECT
+      - EFFECT_FILL
+      - FILL_FILTER
+      - STROKE_FILL_FILTER
+      - EFFECT_FILL_FILTER
+
+  op:
+    description: Change operation type
+
+    type: string
+    enum:
+      - PROPERTY_CHANGE
+      - INSERT
+      - REPLACE
+      - REMOVE
+
+  index:
+    description: Index of array element if needed
+
+    type: integer
+
+  values: # TODO split into separate structs
+    description: Change values corresponding to change subject
+
+    $ref: '../schemas.yaml#/ChangeValues'
+
+required: [subject, op]
