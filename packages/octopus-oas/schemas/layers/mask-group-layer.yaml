@@ -1,5 +1,4 @@
-description:
-  Mask (TODO).
+description: Mask (TODO).
 
 allOf:
   - $ref: '../schemas.yaml#/LayerBase'
@@ -17,6 +16,12 @@ allOf:
       maskBasis:
         description: Describes the part of a masking layer that in fact serves as the mask.
         $ref: '../schemas.yaml#/MaskBasis'
+
+      maskChannels:
+        description:
+          Matrix for the mask's color channels mR, mG, mB, mA, which collapses them into a scalar alpha value.
+          Alpha = M[0] * mR + M[1] * mG + M[2] * mB + M[3] * mA + M[4]
+        $ref: '../schemas.yaml#/RGBAMatrix'
 
       layers:
         type: array

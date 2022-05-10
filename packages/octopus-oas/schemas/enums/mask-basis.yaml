@@ -2,10 +2,8 @@ description: Mask bases enum.
 type: string
 enum:
   - BODY
-  - BODY_MINUS_STROKES
-  - BODY_PLUS_STROKES
+  - BODY_EMBED
   - FILL
-  - LAYER
+  - FILL_EMBED
   - LAYER_AND_EFFECTS
-  - DISABLE_MASK_BEFORE_LAYERS
-  - DISABLE_MASK_AFTER_LAYERS
+  - SOLID

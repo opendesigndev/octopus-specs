@@ -35,6 +35,11 @@ properties:
 
     type: integer
 
+  filterIndex:
+    description: Index of filter if needed
+
+    type: integer
+
   values: # TODO split into separate structs
     description: Change values corresponding to change subject
 

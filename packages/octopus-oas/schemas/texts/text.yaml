@@ -20,7 +20,7 @@ properties:
     items:
       $ref: '../schemas.yaml#/StyleRange'
 
-  textTransform:
+  transform:
     $ref: '../schemas.yaml#/Transform'
 
   frame:

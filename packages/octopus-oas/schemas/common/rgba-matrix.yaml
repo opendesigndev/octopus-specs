@@ -1,0 +1,13 @@
+description:
+  Matrix for the mask's color channels mR, mG, mB, mA, which collapses them into a scalar alpha value.
+  Alpha = M[0] * mR + M[1] * mG + M[2] * mB + M[3] * mA + M[4]
+
+type: array
+
+items:
+  type: number
+  format: float
+  minItems: 5
+  maxItems: 5
+
+default: [0.0, 0.0, 0.0, 1.0, 0.0]

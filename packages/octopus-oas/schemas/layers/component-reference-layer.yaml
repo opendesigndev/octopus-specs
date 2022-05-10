@@ -1,4 +1,4 @@
-description: A layer representing an instantiated component.
+description: A layer representing an non-instantiated component.
 
 allOf:
   - $ref: '../schemas.yaml#/LayerBase'
