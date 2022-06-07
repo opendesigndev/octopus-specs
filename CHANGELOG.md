@@ -1,3 +1,7 @@
+## 3.0.0-alpha.35 (2022-06-02)
+
+- octopus: `Image`'s `subsection` is now `Rectangle`
+
 ## 3.0.0-alpha.34 (2022-06-02)
 
 - octopus: removed `premultiplied` flag on `Image` descriptor
