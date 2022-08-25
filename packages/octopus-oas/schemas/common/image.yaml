@@ -1,5 +1,4 @@
-description:
-  Image description.
+description: Image description.
 
 type: object
 
@@ -7,23 +6,9 @@ properties:
   ref:
     $ref: '../schemas.yaml#/ImageRef'
 
-  premultiplied:
-    description:
-      Denotes whether are the color channels of the referenced image pre-multiplied
-      by a value in the alpha channel.
-
-    type: boolean
-    default: false
-
   subsection:
-    description:
-      Selects a rectangular area from the referenced image. If missing, the image is selected.
+    description: Selects a rectangular area from the referenced image. If missing, the image is selected.
 
-    type: array
-    items:
-      type: integer
-      format: int32
-    minItems: 4
-    maxItems: 4
+    $ref: '../schemas.yaml#/Rectangle'
 
 required: [ref]

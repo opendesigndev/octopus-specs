@@ -1,3 +1,12 @@
+## 3.0.0-alpha.35 (2022-06-02)
+
+- octopus: `Image`'s `subsection` is now `Rectangle`
+
+## 3.0.0-alpha.34 (2022-06-02)
+
+- octopus: removed `premultiplied` flag on `Image` descriptor
+- octopus: removed `DISSOLVE` blend mode
+
 ## 3.0.0-alpha.33 (2022-05-10)
 
 - octopus: added `maskChannels` optional property on MASK_GROUP with RGBAMatrix (5x1) type
