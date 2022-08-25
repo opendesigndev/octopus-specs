@@ -1,1 +1,1 @@
-export { components as Manifest } from './dist/manifest'
+export type { components as Manifest } from './dist/manifest'
