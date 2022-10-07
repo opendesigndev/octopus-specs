@@ -1,3 +1,7 @@
+## 3.0.0-alpha.37 (2022-10-07)
+
+- octopus: renamed `OctopusDocument` to `OctopusComponent`
+
 ## 3.0.0-alpha.36 (2022-08-26)
 
 - manifest: added new `SOURCE` artifact type

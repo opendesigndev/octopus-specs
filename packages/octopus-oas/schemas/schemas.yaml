@@ -1,5 +1,5 @@
-OctopusDocument:
-  $ref: './octopus-document.yaml'
+OctopusComponent:
+  $ref: './octopus-component.yaml'
 
 # Layers
 
