@@ -1,4 +1,4 @@
-description: Octopus Document description
+description: Octopus Component description
 properties:
   version:
     type: string

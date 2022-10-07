@@ -8,11 +8,11 @@ paths:
     get:
       responses:
         "200":
-          description: OctopusDocument
+          description: OctopusComponent
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/OctopusDocument'
+                $ref: '#/components/schemas/OctopusComponent'
 components:
   schemas:
     $ref: 'schemas/schemas.yaml'
