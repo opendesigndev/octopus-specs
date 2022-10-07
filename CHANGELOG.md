@@ -1,3 +1,7 @@
+## 3.0.0-alpha.36 (2022-08-26)
+
+- manifest: added new `SOURCE` artifact type
+
 ## 3.0.0-alpha.35 (2022-06-02)
 
 - octopus: `Image`'s `subsection` is now `Rectangle`

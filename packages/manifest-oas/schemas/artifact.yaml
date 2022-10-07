@@ -7,6 +7,7 @@ properties:
     type: string
     enum:
       - OCTOPUS_EXPANDED
+      - SOURCE
 
   location:
     $ref: './schemas.yaml#/ResourceLocation'
