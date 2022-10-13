@@ -1,5 +1,5 @@
 {
-  "name": "@avocode/manifest-ts",
+  "name": "@opendesign/manifest-ts",
   "version": "3.0.0-alpha.37",
   "files": [
     "dist/manifest.ts",
@@ -12,7 +12,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@avocode/manifest-oas": "^3.0.0-alpha.1",
+    "@opendesign/manifest-oas": "^3.0.0-alpha.1",
     "openapi-typescript": "^4.4.0",
     "prettier": "^2.4.1"
   }

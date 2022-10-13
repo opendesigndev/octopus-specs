@@ -1,5 +1,5 @@
 {
-  "name": "@avocode/octopus-oas",
+  "name": "@opendesign/octopus-oas",
   "version": "3.0.0-alpha.37",
   "files": [
     "dist/openapi.json"

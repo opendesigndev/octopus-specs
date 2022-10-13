@@ -1,5 +1,5 @@
 {
-  "name": "@avocode/manifest-oas",
+  "name": "@opendesign/manifest-oas",
   "version": "3.0.0-alpha.37",
   "files": [
     "dist/openapi.json"

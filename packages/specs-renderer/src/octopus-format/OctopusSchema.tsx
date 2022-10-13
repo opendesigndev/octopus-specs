@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
-import OctopusJson from '@avocode/octopus-schema/openapi.json'
+import OctopusJson from '@opendesign/octopus-schema/openapi.json'
 import CopyButtonModule from 'src/pages/docs/layouts/components/CopyButton'
 import Markdown from '../layouts/components/endpoints/Markdown/Markdown'
 import { getIdFromRef } from './helpers/hooks'
@@ -126,7 +126,7 @@ const OctopusSchema: React.FC = () => {
       if (typeof location === 'undefined') return ''
       return location.origin + pathname + '#' + id
     },
-    [pathname],
+    [pathname]
   )
 
   return (
