@@ -1,6 +1,6 @@
 {
-  "name": "@avocode/octopus-ts",
-  "version": "3.0.0-alpha.37",
+  "name": "@opendesign/octopus-ts",
+  "version": "3.0.0-alpha.39",
   "files": [
     "dist/octopus.ts",
     "index.ts"
@@ -12,7 +12,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@avocode/octopus-oas": "^3.0.0-alpha.1",
+    "@opendesign/octopus-oas": "^3.0.0-alpha.1",
     "openapi-typescript": "^4.4.0",
     "prettier": "^2.4.1"
   }

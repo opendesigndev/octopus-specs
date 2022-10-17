@@ -10,8 +10,8 @@ export default defineConfig({
       { find: 'next', replacement: r('./src/next') },
       { find: 'modules', replacement: r('./src/layouts') },
       {
-        find: '@avocode/octopus-schema/openapi.json',
-        replacement: '@avocode/octopus-oas/dist/openapi.json',
+        find: '@opendesign/octopus-schema/openapi.json',
+        replacement: '@opendesign/octopus-oas/dist/openapi.json',
       },
     ],
   },

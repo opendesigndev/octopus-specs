@@ -4,10 +4,10 @@ Octopus specifications and related TypeScript type definitions.
 
 The project is setup as a mono-repo (using [Yarn Workspaces](https://classic.yarnpkg.com/lang/en/docs/workspaces/)), contains following packages:
 
-- `@avocode/octopus-oas` OpenAPI v3 Specification of the Octopus format
-- `@avocode/octopus-ts`  TypeScript definitions auto generated from `octopus-oas`
-- `@avocode/manifest-oas` *TODO* Octopus Manifest OpenAPI v3 Specification
-- `@avocode/manifest-ts` *TODO*
+- `@opendesign/octopus-oas` OpenAPI v3 Specification of the Octopus format
+- `@opendesign/octopus-ts` TypeScript definitions auto generated from `octopus-oas`
+- `@opendesign/manifest-oas` OpenAPI v3 Specification of the Octopus Manifest format
+- `@opendesign/manifest-ts` TypeScript definitions auto generated from `manifest-oas`
 
 ## Development
 
@@ -32,7 +32,7 @@ yarn version:bump:alpha
 
 This step bumps version in all the packages, commits the changes and tags that commit with a version label.
 
-So far all the changes were done locally. One can check the git log to verify everything is as intended. 
+So far all the changes were done locally. One can check the git log to verify everything is as intended.
 
 _Note that this might change in the future and the whole process might get automated by joining the two publish steps_
 
@@ -59,4 +59,3 @@ The standard way of publishing the packages is to push the tag created by 'Versi
 ```
 git push --follow-tags
 ```
-

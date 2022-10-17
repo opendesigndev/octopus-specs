@@ -19,7 +19,7 @@ PROJECT_ROOT=`dirname ${0}`/..
 
 echo Converting OpenAPI specs into TypeScript interfaces ...
 ${WORKSPACE_ROOT}/node_modules/.bin/openapi-typescript \
-    ${PROJECT_ROOT}/node_modules/@avocode/${TARGET}-oas/dist/openapi.json \
+    ${PROJECT_ROOT}/node_modules/@opendesign/${TARGET}-oas/dist/openapi.json \
     --output ${TS_FILE}
 
 echo Formatting output with prettier...
