@@ -1,0 +1,6 @@
+description: Page meta information
+type: object
+
+properties:
+  originalId:
+    type: string

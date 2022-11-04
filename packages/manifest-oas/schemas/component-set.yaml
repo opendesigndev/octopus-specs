@@ -11,6 +11,9 @@ properties:
   description:
     type: string
 
+  meta:
+    $ref: ./schemas.yaml#/ComponentSetMeta
+
 required:
   - id
   - name

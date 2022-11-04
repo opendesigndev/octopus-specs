@@ -4,3 +4,6 @@ type: object
 properties:
   globalId:
     type: string
+
+  originalId:
+    type: string

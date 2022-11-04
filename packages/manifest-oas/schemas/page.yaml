@@ -8,6 +8,9 @@ properties:
   name:
     type: string
 
+  meta:
+    $ref: ./schemas.yaml#/PageMeta
+
   children:
     type: array
     items:

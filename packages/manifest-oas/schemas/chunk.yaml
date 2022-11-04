@@ -13,6 +13,9 @@ properties:
   name:
     type: string
 
+  meta:
+    $ref: ./schemas.yaml#/ChunkMeta
+
   type:
     type: string
     enum:
