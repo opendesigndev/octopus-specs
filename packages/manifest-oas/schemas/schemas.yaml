@@ -74,3 +74,15 @@ Status:
 
 ComponentMeta:
   $ref: ./component-meta.yaml
+
+ComponentSetMeta:
+  $ref: ./component-set-meta.yaml
+
+PageMeta:
+  $ref: ./page-meta.yaml
+
+LibraryMeta:
+  $ref: ./library-meta.yaml
+
+ChunkMeta:
+  $ref: ./chunk-meta.yaml

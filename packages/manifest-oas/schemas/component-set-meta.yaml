@@ -1,0 +1,6 @@
+description: ComponentSet meta information
+type: object
+
+properties:
+  originalId:
+    type: string
