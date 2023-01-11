@@ -1,18 +1,22 @@
 import React, { useCallback } from 'react'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
-import OctopusJson from '@opendesign/octopus-schema/openapi.json'
+import type OctopusComponent from '@opendesign/octopus-oas/dist/openapi.json'
+import type OctopusManifest from '@opendesign/manifest-oas/dist/openapi.json'
 import CopyButtonModule from 'src/pages/docs/layouts/components/CopyButton'
 import Markdown from '../layouts/components/endpoints/Markdown/Markdown'
 import { getIdFromRef } from './helpers/hooks'
 import SchemaType from './components/SchemaType'
-import SchemaHeader from './components/SchemaHeader'
+import { createAnchorLink } from '../utils/create-anchor-link'
+// import SchemaHeader from './components/SchemaHeader'
 
 const TypeSchema = styled.div`
   display: grid;
   grid-template-columns: 300px auto;
   grid-column-gap: 2rem;
+  margin: 0px 30px 30px 0;
   background-image: linear-gradient(rgba(232, 240, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 100px);
+  border-radius: 5px;
   padding: 3rem;
   padding-bottom: 2rem;
 
@@ -117,14 +121,18 @@ const SchemaLink = styled.div`
   }
 `
 
-const OctopusSchema: React.FC = () => {
-  const { schemas } = OctopusJson.components
+type OctopusSchemaProps = {
+  schemaTypePrefix: string
+  schemas: typeof OctopusComponent.components.schemas | typeof OctopusManifest.components.schemas
+}
+
+const Schema: React.FC<OctopusSchemaProps> = ({ schemaTypePrefix, schemas }) => {
   const { pathname } = useRouter()
 
   const getSchemaLink = useCallback(
     (id: string) => {
       if (typeof location === 'undefined') return ''
-      return location.origin + pathname + '#' + id
+      return `${location.origin}${pathname}#${createAnchorLink(schemaTypePrefix, id)}`
     },
     [pathname]
   )
@@ -134,8 +142,10 @@ const OctopusSchema: React.FC = () => {
       {Object.keys(schemas).map((schemaTypeName) => {
         if ('oneOf' in schemas[schemaTypeName]) {
           return (
-            <div id={schemaTypeName} key={schemaTypeName}>
-              <SchemaHeader />
+            <div
+              id={createAnchorLink(schemaTypePrefix, schemaTypeName)}
+              key={createAnchorLink(schemaTypePrefix, schemaTypeName)}
+            >
               <TypeSchema>
                 <TypeWrapper>
                   <TypeName>
@@ -161,7 +171,7 @@ const OctopusSchema: React.FC = () => {
                     const id = $ref ? getIdFromRef($ref) : ''
                     return (
                       <SchemaLink key={id}>
-                        <a href={`#${id}`}>{id}</a>
+                        <a href={`#${createAnchorLink(schemaTypePrefix, id)}`}>{id}</a>
                       </SchemaLink>
                     )
                   })}
@@ -173,8 +183,10 @@ const OctopusSchema: React.FC = () => {
 
         if ('allOf' in schemas[schemaTypeName]) {
           return (
-            <div id={schemaTypeName} key={schemaTypeName}>
-              <SchemaHeader />
+            <div
+              id={createAnchorLink(schemaTypePrefix, schemaTypeName)}
+              key={createAnchorLink(schemaTypePrefix, schemaTypeName)}
+            >
               <TypeSchema>
                 <TypeWrapper>
                   <TypeName>
@@ -200,7 +212,8 @@ const OctopusSchema: React.FC = () => {
 
                       return (
                         <BaseType key={id}>
-                          inherits from <a href={`#${id}`}>{id}</a>
+                          inherits from{' '}
+                          <a href={`#${createAnchorLink(schemaTypePrefix, id)}`}>{id}</a>
                         </BaseType>
                       )
                     }
@@ -215,6 +228,7 @@ const OctopusSchema: React.FC = () => {
                           schema={properties[typeName]}
                           name={typeName}
                           requiredTypes={required}
+                          schemaTypePrefix={schemaTypePrefix}
                         />
                       )
                     })
@@ -227,8 +241,10 @@ const OctopusSchema: React.FC = () => {
 
         if ('properties' in schemas[schemaTypeName]) {
           return (
-            <div id={schemaTypeName} key={schemaTypeName}>
-              <SchemaHeader />
+            <div
+              id={createAnchorLink(schemaTypePrefix, schemaTypeName)}
+              key={createAnchorLink(schemaTypePrefix, schemaTypeName)}
+            >
               <TypeSchema>
                 <TypeWrapper>
                   <TypeName>
@@ -259,6 +275,7 @@ const OctopusSchema: React.FC = () => {
                         schema={properties[typeName]}
                         name={typeName}
                         requiredTypes={required}
+                        schemaTypePrefix={schemaTypePrefix}
                       />
                     )
                   })}
@@ -268,10 +285,47 @@ const OctopusSchema: React.FC = () => {
           )
         }
 
+        const { required } = schemas[schemaTypeName]
+
+        return (
+          <div
+            id={createAnchorLink(schemaTypePrefix, schemaTypeName)}
+            key={createAnchorLink(schemaTypePrefix, schemaTypeName)}
+          >
+            <TypeSchema>
+              <TypeWrapper>
+                <TypeName>
+                  <CopyButton
+                    position='left'
+                    icon='anchor'
+                    copyContent={getSchemaLink(schemaTypeName)}
+                    trackingOptions={{
+                      type: 'link',
+                      source: 'octopus-format',
+                      name: schemaTypeName,
+                      link: getSchemaLink(schemaTypeName),
+                    }}
+                  />
+                  {schemaTypeName}
+                </TypeName>
+                <TypeDescription source={schemas[schemaTypeName].description} />
+              </TypeWrapper>
+              <SchemaType
+                key={schemaTypeName}
+                schemas={schemas}
+                schema={schemas[schemaTypeName]}
+                name={schemaTypeName}
+                requiredTypes={required}
+                schemaTypePrefix={schemaTypePrefix}
+              />
+            </TypeSchema>
+          </div>
+        )
+
         return null
       })}
     </div>
   )
 }
 
-export default OctopusSchema
+export default Schema

@@ -83,6 +83,7 @@ type Props = {
   isNested?: boolean
   isOpen?: boolean
   toggleOpen?: () => void
+  schemaTypePrefix: string
 }
 
 const SchemaType: React.FC<Props> = ({
@@ -94,6 +95,7 @@ const SchemaType: React.FC<Props> = ({
   isIndented = false,
   isOpen,
   toggleOpen,
+  schemaTypePrefix,
 }) => {
   const {
     id,
@@ -124,8 +126,8 @@ const SchemaType: React.FC<Props> = ({
           schema={schema}
           isOpen={open}
           toggleOpen={toggleOpen}
+          schemaTypePrefix={schemaTypePrefix}
         />
-
         {properties && open && (
           <div>
             {Object.keys(properties).map((property) => {
@@ -137,6 +139,7 @@ const SchemaType: React.FC<Props> = ({
                   requiredTypes={schema?.required}
                   schemas={schemas}
                   schema={properties[property]}
+                  schemaTypePrefix={schemaTypePrefix}
                 />
               )
             })}
@@ -162,6 +165,7 @@ const SchemaType: React.FC<Props> = ({
           format={format}
           isArray={isArray}
           hasNestedSchema={hasNestedSchema}
+          schemaTypePrefix={schemaTypePrefix}
         />
       </TypeHeader>
 

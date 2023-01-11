@@ -24,6 +24,8 @@ export function useSchema(schemas, schema) {
   let hasNestedSchema = false
   let isArray = false
 
+  description = description ?? ''
+
   if ($ref) {
     id = getIdFromRef($ref)
 
@@ -95,7 +97,7 @@ export function useSchema(schemas, schema) {
     defaultValue,
     format,
     description,
-    hasNestedSchema,
+    hasNestedSchema: hasNestedSchema || Boolean(id),
     isArray,
     properties,
   }
