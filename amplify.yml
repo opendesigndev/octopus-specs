@@ -13,7 +13,7 @@ frontend:
       commands:
         - yarn build
   artifacts:
-    baseDirectory: /specs-renderer/dist/
+    baseDirectory: /packages/specs-renderer/dist/
     files:
       - '**/*'
   cache:
