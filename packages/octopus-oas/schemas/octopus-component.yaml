@@ -8,7 +8,7 @@ properties:
 
   type:
     type: string
-    enum: [ARTBOARD]
+    enum: [OCTOPUS_COMPONENT]
 
   dimensions:
     $ref: './schemas.yaml#/Dimensions'
