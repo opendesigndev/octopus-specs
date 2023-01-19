@@ -1,3 +1,24 @@
+## 3.0.0-alpha.41 (2023-01-18)
+
+- manifest: added `PARTIAL` value to `role` enum on `Component` descriptor
+- octopus: renamed `ARTBOARD` to `OCTOPUS_COMPONENT` on property `type` on `OctopusComponent` descriptors
+
+## 3.0.0-alpha.40 (2022-11-04)
+
+- manifest: added `originalId` property on `ComponentMeta` descriptor
+- manifest: added `ChunkMeta` descriptor
+- manifest: added `meta` property on `Chunk` descriptor
+- manifest: added `ComponentSetMeta` descriptor
+- manifest: added `meta` property on `ComponentSet` descriptor
+- manifest: added `LibraryMeta` descriptor
+- manifest: added `meta` property on `Library` descriptor
+- manifest: added `PageMeta` descriptor
+- manifest: added `meta` property on `Page` descriptor
+
+## 3.0.0-alpha.39 (2022-10-13)
+
+## 3.0.0-alpha.38 (2022-10-13)
+
 ## 3.0.0-alpha.37 (2022-10-07)
 
 - octopus: renamed `OctopusDocument` to `OctopusComponent`
