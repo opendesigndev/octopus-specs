@@ -3,6 +3,7 @@ type: object
 
 properties:
   version:
+    description: Octopus schema version
     type: string
 
   origin:
@@ -10,6 +11,9 @@ properties:
 
   name:
     type: string
+
+  meta:
+    $ref: ./schemas.yaml#/OctopusManifestMeta
 
   pages:
     type: array

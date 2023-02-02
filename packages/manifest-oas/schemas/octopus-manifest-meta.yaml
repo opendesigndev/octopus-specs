@@ -1,0 +1,6 @@
+description: Octopus Manifest meta information
+type: object
+
+properties:
+  converterVersion:
+    type: string

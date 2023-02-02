@@ -4,6 +4,9 @@ OctopusManifest:
 Origin:
   $ref: ./origin.yaml
 
+OctopusManifestMeta:
+  $ref: ./octopus-manifest-meta.yaml
+
 Page:
   $ref: ./page.yaml
 

@@ -1,3 +1,8 @@
+## 3.0.0 (2023-02-03)
+
+- manifest: added `OctopusManifestMeta` descriptor
+- manifest: added `meta` property on `OctopusManifest` descriptor
+
 ## 3.0.0-alpha.41 (2023-01-18)
 
 - manifest: added `PARTIAL` value to `role` enum on `Component` descriptor

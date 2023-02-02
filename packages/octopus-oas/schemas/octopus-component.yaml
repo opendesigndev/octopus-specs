@@ -1,6 +1,7 @@
 description: Octopus Component description
 properties:
   version:
+    description: Octopus schema version
     type: string
 
   id:
