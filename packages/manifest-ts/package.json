@@ -1,6 +1,6 @@
 {
   "name": "@opendesign/manifest-ts",
-  "version": "3.0.0-alpha.41",
+  "version": "3.0.1",
   "files": [
     "dist/manifest.ts",
     "index.ts"

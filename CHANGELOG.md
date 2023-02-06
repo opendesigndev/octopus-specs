@@ -1,4 +1,4 @@
-## 3.0.0 (2023-02-03)
+## 3.0.1 (2023-02-06)
 
 - manifest: added `OctopusManifestMeta` descriptor
 - manifest: added `meta` property on `OctopusManifest` descriptor
