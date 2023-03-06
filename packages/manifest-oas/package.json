@@ -1,6 +1,6 @@
 {
   "name": "@opendesign/manifest-oas",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "files": [
     "dist/openapi.json"
   ],
