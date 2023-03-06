@@ -1,0 +1,8 @@
+description: Shadow meta.
+
+type: object
+
+properties:
+  isGlow:
+    description: True if shadow is glow effect originally.
+    type: boolean

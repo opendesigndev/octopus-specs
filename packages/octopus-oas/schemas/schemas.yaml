@@ -215,20 +215,23 @@ EffectDropShadow:
 EffectInnerShadow:
   $ref: ./effects/inner-shadow.yaml
 
-EffectInnerGlow:
-  $ref: ./effects/inner-glow.yaml
-
-EffectOuterGlow:
-  $ref: ./effects/outer-glow.yaml
-
 EffectBlur:
   $ref: ./effects/blur.yaml
+
+EffectGaussianBlur:
+  $ref: ./effects/gaussian-blur.yaml
+
+EffectBoundedBlur:
+  $ref: ./effects/bounded-blur.yaml
 
 EffectOther:
   $ref: ./effects/other.yaml
 
 ShadowConfig:
   $ref: ./effects/shadow-config.yaml
+
+ShadowMeta:
+  $ref: ./effects/shadow-meta.yaml
 
 # Texts
 

@@ -1,3 +1,9 @@
+## 3.0.2 (2023-03-06)
+
+- octopus: Blurs are now divided to `GAUSSIAN_BLUR` and `BOUNDED_BLUR`
+- octopus: Glows are removed in favor of Shadows
+- octopus: `maskChannels`, `filters` are added to `ChangeValues`
+
 ## 3.0.1 (2023-02-06)
 
 - manifest: added `OctopusManifestMeta` descriptor

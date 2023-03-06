@@ -1,4 +1,4 @@
-description: Blur effect. Alias for `GAUSSIAN_BLUR`. Deprecated.
+description: Gaussian blur effect.
 
 type: object
 
@@ -10,9 +10,10 @@ allOf:
       type:
         type: string
         enum:
-          - BLUR
+          - GAUSSIAN_BLUR
 
       blur:
+        description: \"Flatness\" of the distribution (sigma value).
         type: number
         format: float
 

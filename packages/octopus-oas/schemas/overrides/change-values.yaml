@@ -79,3 +79,11 @@ properties:
 
   basis:
     $ref: '../schemas.yaml#/EffectBasis'
+
+  maskChannels:
+    $ref: '../schemas.yaml#/RGBAMatrix'
+
+  filters:
+    type: array
+    items:
+      $ref: '../schemas.yaml#/ImageFilter'

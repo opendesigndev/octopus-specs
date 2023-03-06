@@ -1,5 +1,4 @@
-description:
-  Effect type enum.
+description: Effect type enum.
 
 type: string
 enum:
@@ -7,8 +6,8 @@ enum:
   - STROKE
   - DROP_SHADOW
   - INNER_SHADOW
-  - OUTER_GLOW
-  - INNER_GLOW
   - BLUR
+  - GAUSSIAN_BLUR
+  - BOUNDED_BLUR
   - BACKGROUND_BLUR
   - OTHER
