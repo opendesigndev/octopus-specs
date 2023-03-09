@@ -11,3 +11,4 @@ yarn-error.log
 path_type_common.yaml
 .DS_Store
 *.local
+.env

@@ -6,6 +6,8 @@ import Schema from './octopus-format/OctopusSchema'
 import styled from 'styled-components'
 import OctopusComponent from '@opendesign/octopus-oas/dist/openapi.json'
 import OctopusManifest from '@opendesign/manifest-oas/dist/openapi.json'
+import { version as octopusVersion } from '@opendesign/octopus-oas/package.json'
+import { version as manifestVersion } from '@opendesign/manifest-oas/package.json'
 
 const Wrapper = styled.div`
   display: grid;
@@ -26,9 +28,15 @@ const SchemaNav = styled.a`
 `
 
 const SchemaDesc = styled.div`
-  padding: 0px 0 30px 30px;
+  padding: 0 0 8px 30px;
   width: 280px;
   color: rgb(96, 105, 119);
+  font-size: 14px;
+`
+
+const SchemaVersion = styled.div`
+  padding: 0 0 30px 30px;
+  color: rgb(196, 205, 219);
   font-size: 14px;
 `
 
@@ -40,6 +48,7 @@ export function App() {
       schemas: OctopusComponent.components.schemas,
       description:
         'Octopus Component specification. Describes artboards, components and pasteboard.',
+      version: octopusVersion,
     },
     {
       prefix: 'OctopusManifest',
@@ -47,6 +56,7 @@ export function App() {
       schemas: OctopusManifest.components.schemas,
       description:
         'Octopus Manifest specification. Describes the root meta-file which contains information about whole Octopus design file.',
+      version: manifestVersion,
     },
   ]
 
@@ -56,6 +66,7 @@ export function App() {
         <>
           <SchemaNav href={`#schema-${schema.prefix}`}>{schema.name}</SchemaNav>
           <SchemaDesc>{schema.description}</SchemaDesc>
+          <SchemaVersion>v{schema.version}</SchemaVersion>
         </>
       ),
       schema: (
