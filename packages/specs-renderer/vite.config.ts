@@ -9,10 +9,6 @@ export default defineConfig({
       { find: 'src/pages/docs/layouts', replacement: r('./src/layouts') },
       { find: 'next', replacement: r('./src/next') },
       { find: 'modules', replacement: r('./src/layouts') },
-      {
-        find: '@opendesign/octopus-schema/openapi.json',
-        replacement: '@opendesign/octopus-oas/dist/openapi.json',
-      },
     ],
   },
 })

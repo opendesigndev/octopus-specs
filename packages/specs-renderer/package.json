@@ -11,7 +11,6 @@
     "version:bump": "echo skipping..."
   },
   "dependencies": {
-    "@opendesign/octopus-oas": "^3.0.0-alpha.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-markdown": "^7.1.1",

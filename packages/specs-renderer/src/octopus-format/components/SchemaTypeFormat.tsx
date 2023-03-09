@@ -1,4 +1,5 @@
 import React from 'react'
+import { createAnchorLink } from '../../utils/create-anchor-link'
 import styled from 'styled-components'
 
 const TypeFormat = styled.span`
@@ -24,9 +25,17 @@ type Props = {
   format: string
   isArray: boolean
   hasNestedSchema: boolean
+  schemaTypePrefix: string
 }
 
-const SchemaTypeFormat: React.FC<Props> = ({ id, type, format, isArray, hasNestedSchema }) => {
+const SchemaTypeFormat: React.FC<Props> = ({
+  id,
+  type,
+  format,
+  isArray,
+  hasNestedSchema,
+  schemaTypePrefix,
+}) => {
   let typeFormat = hasNestedSchema ? id : type
   typeFormat += isArray ? '[]' : ''
 
@@ -35,7 +44,7 @@ const SchemaTypeFormat: React.FC<Props> = ({ id, type, format, isArray, hasNeste
   if (hasNestedSchema) {
     return (
       <TypeFormat>
-        <a href={`#${id}`}>{typeFormat}</a>
+        <a href={`#${createAnchorLink(schemaTypePrefix, id as string)}`}>{typeFormat}</a>
       </TypeFormat>
     )
   }
