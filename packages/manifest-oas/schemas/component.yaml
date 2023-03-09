@@ -54,6 +54,7 @@ properties:
       - ARTBOARD
       - COMPONENT
       - PASTEBOARD
+      - PARTIAL
     default: COMPONENT
 
 required:

@@ -1,14 +1,13 @@
-description:
-  Abstract effect definition.
+description: Abstract effect definition.
 
 oneOf:
   - $ref: '../schemas.yaml#/EffectOverlay'
   - $ref: '../schemas.yaml#/EffectStroke'
   - $ref: '../schemas.yaml#/EffectDropShadow'
   - $ref: '../schemas.yaml#/EffectInnerShadow'
-  - $ref: '../schemas.yaml#/EffectInnerGlow'
-  - $ref: '../schemas.yaml#/EffectOuterGlow'
   - $ref: '../schemas.yaml#/EffectBlur'
+  - $ref: '../schemas.yaml#/EffectGaussianBlur'
+  - $ref: '../schemas.yaml#/EffectBoundedBlur'
   - $ref: '../schemas.yaml#/EffectOther'
 
 discriminator:
@@ -18,7 +17,7 @@ discriminator:
     STROKE: '#/components/schemas/EffectStroke'
     DROP_SHADOW: '#/components/schemas/EffectDropShadow'
     INNER_SHADOW: '#/components/schemas/EffectInnerShadow'
-    INNER_GLOW: '#/components/schemas/EffectInnerGlow'
-    OUTER_GLOW: '#/components/schemas/EffectOuterGlow'
     BLUR: '#/components/schemas/EffectBlur'
+    GAUSSIAN_BLUR: '#/components/schemas/EffectGaussianBlur'
+    BOUNDED_BLUR: '#/components/schemas/EffectBoundedBlur'
     OTHER: '#/components/schemas/EffectOther'

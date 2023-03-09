@@ -1,3 +1,35 @@
+## 3.0.2 (2023-03-06)
+
+- octopus: Blurs are now divided to `GAUSSIAN_BLUR` and `BOUNDED_BLUR`
+- octopus: Glows are removed in favor of Shadows
+- octopus: `maskChannels`, `filters` are added to `ChangeValues`
+
+## 3.0.1 (2023-02-06)
+
+- manifest: added `OctopusManifestMeta` descriptor
+- manifest: added `meta` property on `OctopusManifest` descriptor
+
+## 3.0.0-alpha.41 (2023-01-18)
+
+- manifest: added `PARTIAL` value to `role` enum on `Component` descriptor
+- octopus: renamed `ARTBOARD` to `OCTOPUS_COMPONENT` on property `type` on `OctopusComponent` descriptors
+
+## 3.0.0-alpha.40 (2022-11-04)
+
+- manifest: added `originalId` property on `ComponentMeta` descriptor
+- manifest: added `ChunkMeta` descriptor
+- manifest: added `meta` property on `Chunk` descriptor
+- manifest: added `ComponentSetMeta` descriptor
+- manifest: added `meta` property on `ComponentSet` descriptor
+- manifest: added `LibraryMeta` descriptor
+- manifest: added `meta` property on `Library` descriptor
+- manifest: added `PageMeta` descriptor
+- manifest: added `meta` property on `Page` descriptor
+
+## 3.0.0-alpha.39 (2022-10-13)
+
+## 3.0.0-alpha.38 (2022-10-13)
+
 ## 3.0.0-alpha.37 (2022-10-07)
 
 - octopus: renamed `OctopusDocument` to `OctopusComponent`

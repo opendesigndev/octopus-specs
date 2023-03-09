@@ -1,5 +1,4 @@
-description:
-  Common shadow/glow properties.
+description: Common shadow properties.
 
 type: object
 
@@ -10,14 +9,12 @@ properties:
   blur:
     type: number
     format: float
-    description:
-      Blur value of the shadow.
+    description: Blur value of the shadow.
 
   choke:
     type: number
     format: float
-    description:
-      Spread amount of the shadow contour.
+    description: Spread amount of the shadow contour.
 
   color:
     $ref: '../schemas.yaml#/Color'

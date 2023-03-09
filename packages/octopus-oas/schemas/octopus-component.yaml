@@ -1,6 +1,7 @@
 description: Octopus Component description
 properties:
   version:
+    description: Octopus schema version
     type: string
 
   id:
@@ -8,7 +9,7 @@ properties:
 
   type:
     type: string
-    enum: [ARTBOARD]
+    enum: [OCTOPUS_COMPONENT]
 
   dimensions:
     $ref: './schemas.yaml#/Dimensions'

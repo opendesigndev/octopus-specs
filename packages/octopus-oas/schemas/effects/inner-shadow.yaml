@@ -1,5 +1,4 @@
-description:
-  Inner shadow effect description.
+description: Inner shadow effect description.
 
 type: object
 
@@ -15,5 +14,8 @@ allOf:
 
       shadow:
         $ref: '../schemas.yaml#/ShadowConfig'
+
+      meta:
+        $ref: '../schemas.yaml#/ShadowMeta'
 
     required: [type, shadow]

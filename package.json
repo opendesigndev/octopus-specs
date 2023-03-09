@@ -1,6 +1,6 @@
 {
   "name": "@opendesign/octopus-specs",
-  "version": "3.0.0-alpha.40",
+  "version": "3.0.2",
   "private": true,
   "workspaces": [
     "packages/octopus-oas",

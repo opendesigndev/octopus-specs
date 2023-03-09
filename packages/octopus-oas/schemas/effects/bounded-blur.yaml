@@ -1,4 +1,4 @@
-description: Blur effect. Alias for `GAUSSIAN_BLUR`. Deprecated.
+description: Bounded blur effect.
 
 type: object
 
@@ -10,9 +10,10 @@ allOf:
       type:
         type: string
         enum:
-          - BLUR
+          - BOUNDED_BLUR
 
       blur:
+        description: Size of its square bounds (radius).
         type: number
         format: float
 

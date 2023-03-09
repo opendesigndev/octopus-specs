@@ -1,1 +1,1 @@
-export { components as Octopus } from './dist/octopus'
+export type { components as Octopus } from './dist/octopus'
