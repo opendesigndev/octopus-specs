@@ -87,9 +87,9 @@ export function App() {
         <GlobalStyles />
         <Wrapper>
           <div>
-            <Menu children={buttons}></Menu>
+            <Menu>{buttons}</Menu>
           </div>
-          <div children={schemasContent}></div>
+          <div>{schemasContent}</div>
         </Wrapper>
       </BrowserRouter>
     </ThemeProvider>

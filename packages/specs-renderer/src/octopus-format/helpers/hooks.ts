@@ -18,13 +18,11 @@ function getUniqueArray(array: Array<any>) {
 
 export function useSchema(schemas, schema) {
   const { $ref, oneOf } = schema
-  let { type, description, format, enum: enums, default: defaultValue, properties } = schema
+  let { type, format, enum: enums, default: defaultValue, properties, description = '' } = schema
 
   let id: string | undefined
   let hasNestedSchema = false
   let isArray = false
-
-  description = description ?? ''
 
   if ($ref) {
     id = getIdFromRef($ref)
