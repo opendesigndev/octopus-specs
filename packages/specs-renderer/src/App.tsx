@@ -36,7 +36,7 @@ const SchemaDesc = styled.div`
 
 const SchemaVersion = styled.div`
   padding: 0 0 30px 30px;
-  color: rgb(196, 205, 219);
+  color: rgb(80, 200, 120);
   font-size: 14px;
 `
 
