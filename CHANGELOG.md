@@ -1,3 +1,7 @@
+## 3.0.3 (2023-04-05)
+
+- manifest: added `dimensions` property on `LayerMeta` descriptor
+
 ## 3.0.2 (2023-03-06)
 
 - octopus: Blurs are now divided to `GAUSSIAN_BLUR` and `BOUNDED_BLUR`

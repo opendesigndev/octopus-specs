@@ -10,6 +10,13 @@ properties:
 
     $ref: '../schemas.yaml#/TransformMeta'
 
+
+  dimensions:
+    description:
+      Layer original dimensions
+
+    $ref: '../schemas.yaml#/Dimensions'
+
   isArtboard:
     description:
       If true, the layer serves a purpose of an artboard.
