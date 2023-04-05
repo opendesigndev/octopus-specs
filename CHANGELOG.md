@@ -1,4 +1,4 @@
-## 3.0.3 (2023-04-05)
+## 3.1.0 (2023-04-05)
 
 - manifest: added `dimensions` property on `LayerMeta` descriptor
 
