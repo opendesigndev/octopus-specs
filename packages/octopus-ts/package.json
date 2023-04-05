@@ -1,6 +1,6 @@
 {
   "name": "@opendesign/octopus-ts",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "files": [
     "dist/octopus.ts",
     "index.ts"
