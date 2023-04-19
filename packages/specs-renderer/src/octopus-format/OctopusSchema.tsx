@@ -7,7 +7,7 @@ import CopyButtonModule from 'src/pages/docs/layouts/components/CopyButton'
 import Markdown from '../layouts/components/endpoints/Markdown/Markdown'
 import { getIdFromRef } from './helpers/hooks'
 import SchemaType from './components/SchemaType'
-import { createAnchorLink } from '../utils/create-anchor-link'
+import { createAnchorLink } from './helpers/create-anchor-link'
 // import SchemaHeader from './components/SchemaHeader'
 
 const TypeSchema = styled.div`

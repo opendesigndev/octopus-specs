@@ -1,5 +1,5 @@
 import React from 'react'
-import { createAnchorLink } from '../../utils/create-anchor-link'
+import { createAnchorLink } from '../helpers/create-anchor-link'
 import styled from 'styled-components'
 
 const TypeFormat = styled.span`
