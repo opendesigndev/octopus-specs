@@ -1,3 +1,7 @@
+## 4.0.0 (2023-04-25)
+
+- manifest: **breaking** renamed `name` to `postScriptName` on `AssetFont` descriptor
+
 ## 3.1.0 (2023-04-05)
 
 - manifest: added `dimensions` property on `LayerMeta` descriptor
