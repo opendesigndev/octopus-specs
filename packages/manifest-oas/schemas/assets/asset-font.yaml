@@ -9,5 +9,6 @@ properties:
   refId:
     type: string
 
-  name:
+  postScriptName:
     type: string
+    description: 'PostScript name for which this font asset should be used.'
