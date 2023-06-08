@@ -1,3 +1,9 @@
+## 3.1.1 (2023-06-08)
+
+- octopus: added `Bounds` descriptor
+- octopus: added `absoluteBoundingBox` property on `LayerMeta` descriptor
+- octopus: added `absoluteRenderBounds` property on `LayerMeta` descriptor
+
 ## 3.1.0 (2023-04-05)
 
 - manifest: added `dimensions` property on `LayerMeta` descriptor

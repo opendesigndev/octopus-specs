@@ -58,6 +58,9 @@ Id:
 Dimensions:
   $ref: ./common/dimensions.yaml
 
+Bounds:
+  $ref: ./common/bounds.yaml
+
 Vec2:
   $ref: ./common/vec2.yaml
 
