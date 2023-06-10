@@ -25,3 +25,13 @@ properties:
 
   origin:
     $ref: '../schemas.yaml#/MetaOrigin'
+
+  absoluteBoundingBox:
+    description:
+      The bounds of the node that does not include rendered properties like drop shadows or strokes.
+    $ref: '../schemas.yaml#/Bounds'
+
+  absoluteRenderBounds:
+    description:
+      The actual bounds of a node accounting for drop shadows, thick strokes, and anything else that may fall outside the node's regular bounding box defined in x, y, width, and height.
+    $ref: '../schemas.yaml#/Bounds'
