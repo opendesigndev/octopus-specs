@@ -8,6 +8,7 @@ oneOf:
   - $ref: '../schemas.yaml#/EffectBlur'
   - $ref: '../schemas.yaml#/EffectGaussianBlur'
   - $ref: '../schemas.yaml#/EffectBoundedBlur'
+  - $ref: '../schemas.yaml#/EffectBackgroundBlur'
   - $ref: '../schemas.yaml#/EffectOther'
 
 discriminator:
@@ -20,4 +21,5 @@ discriminator:
     BLUR: '#/components/schemas/EffectBlur'
     GAUSSIAN_BLUR: '#/components/schemas/EffectGaussianBlur'
     BOUNDED_BLUR: '#/components/schemas/EffectBoundedBlur'
+    BACKGROUND_BLUR: '#/components/schemas/EffectBackgroundBlur'
     OTHER: '#/components/schemas/EffectOther'

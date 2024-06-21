@@ -227,6 +227,9 @@ EffectGaussianBlur:
 EffectBoundedBlur:
   $ref: ./effects/bounded-blur.yaml
 
+EffectBackgroundBlur:
+  $ref: ./effects/background-blur.yaml
+
 EffectOther:
   $ref: ./effects/other.yaml
 

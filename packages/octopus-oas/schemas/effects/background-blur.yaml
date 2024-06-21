@@ -1,0 +1,25 @@
+description: Background blur effect.
+
+type: object
+
+allOf:
+  - $ref: '../schemas.yaml#/EffectBase'
+
+  - type: object
+    properties:
+      type:
+        type: string
+        enum:
+          - BACKGROUND_BLUR
+
+      blur:
+        description: Intensity of the blur (radius).
+        type: number
+        format: float
+
+      filters:
+        type: array
+        items:
+          $ref: '../schemas.yaml#/ImageFilter'
+
+    required: [type, blur]
