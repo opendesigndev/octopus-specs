@@ -25,6 +25,13 @@ properties:
 
   frame:
     $ref: '../schemas.yaml#/TextFrame'
+  
+  lists:
+    description: An array where each element describes one element of the list
+
+    type: array
+    items:
+      $ref: '../schemas.yaml#/TextListEntry'
 
   horizontalAlign:
     description: Horizontal alignment of the text.

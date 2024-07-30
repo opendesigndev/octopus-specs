@@ -70,6 +70,16 @@ properties:
       Describes if the text has line through.
     type: boolean
 
+  superscript:
+    description:
+      Describes if the text is superscripted.
+    type: boolean
+
+  subscript:
+    description:
+      Describes if the text is subscripted.
+    type: boolean
+
   letterCase:
     description:
       Describes a letter case type.

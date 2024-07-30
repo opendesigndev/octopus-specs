@@ -1,0 +1,32 @@
+description:
+  Text list entry
+
+type: object
+
+properties:
+  description: Type of list entry
+  type:
+    type: string
+    enum: 
+    - BULLETED
+    - NUMBERED
+    - EMPTY
+
+  marker:
+    description: Either '1.', '2.', '3.' ... for number lists, '●' for bulleted or '' for empty.
+    type: string
+
+  index:
+    description: Index of text value where entry starts
+    type: integer
+
+  paddingLeft:
+    description: Left padding in pixels
+    type: number
+
+
+required:
+  - type
+  - marker
+  - index
+  - paddingLeft

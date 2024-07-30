@@ -250,6 +250,9 @@ TextStyle:
 StyleRange:
   $ref: ./texts/style-range.yaml
 
+TextListEntry:
+  $ref: ./texts/text-list-entry.yaml
+
 Font:
   $ref: ./texts/font.yaml
 
