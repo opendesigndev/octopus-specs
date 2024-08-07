@@ -4,8 +4,8 @@ description:
 type: object
 
 properties:
-  description: Type of list entry
   type:
+    description: Type of list entry
     type: string
     enum: 
     - BULLETED
