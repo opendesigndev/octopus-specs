@@ -19,6 +19,9 @@ properties:
   index:
     description: Index of text value where entry starts
     type: integer
+  
+  style:
+    $ref: '../schemas.yaml#/TextStyle'
 
   paddingLeft:
     description: Left padding in pixels
@@ -30,3 +33,4 @@ required:
   - marker
   - index
   - paddingLeft
+  - style
