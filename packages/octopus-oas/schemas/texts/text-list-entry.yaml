@@ -27,6 +27,10 @@ properties:
     description: Left padding in pixels
     type: number
 
+  listIndent:
+    description: Indent used for given line (0 by default, 1 for one "tab", etc)
+    type: number
+
 
 required:
   - type
@@ -34,3 +38,4 @@ required:
   - index
   - paddingLeft
   - style
+  - listIndent
